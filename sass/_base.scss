@@ -73,19 +73,19 @@ ul {
 	align-items: center;
 
 	&__logo {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		font-weight: 500;
 		list-style: none;
 		padding: 0 2rem;
-		opacity: 1;
-		transform: translateY(-10rem);
+		opacity: 0;
+		// transform: translateY(-10rem);
 	}
 
 	// &__about,
 	// &__projects,
 	// &__contac
 	.nav__item {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		font-weight: 300;
 		list-style: none;
 		padding: 0 2rem;
@@ -112,14 +112,14 @@ ul {
 }
 
 .slide-down {
-	animation: slide-down 2.5s ease-out;
+	animation: slide-down 3s ease-out 1s;
 	animation-fill-mode: forwards;
 }
 
 @keyframes slide-down {
 	0% {
 		opacity: 0;
-		scale: 0;
+		// scale: 0;
 	}
 
 	// 90% {
@@ -128,8 +128,8 @@ ul {
 
 	100% {
 		opacity: 1;
-		scale: 1;
-		transform: translateY(0rem);
+		// scale: 1;
+		// transform: translateY(0rem);
 	}
 }
 
@@ -141,7 +141,7 @@ ul {
 @keyframes slide-left {
 	0% {
 		opacity: 0;
-		scale: 0;
+		// scale: 0;
 	}
 
 	// 90% {
@@ -151,22 +151,16 @@ ul {
 
 	100% {
 		opacity: 1;
-		scale: 1;
+		// scale: 1;
 		// transform: translateX(0rem);
 	}
 }
 
 .welcome {
-	height: 90vh;
-	width: 95vw;
+	height: 80vh;
+	width: 90vw;
 	margin: auto;
 	border-radius: 1rem;
-	/*
-	background-image: linear-gradient(
-		to bottom,
-		rgba($primary-color-dark, 0.8),
-		rgba($primary-color-light, 0.8)
-	);*/
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -174,32 +168,110 @@ ul {
 }
 
 .welcome-text {
-	// font-weight: 100;
 	position: absolute;
 	top: 55%;
 	left: 0%;
 	transform: translate(0%, -50%);
 	height: 55rem;
-	width: 75vw;
-	// border-radius: 100rem;
-	background-color: $bg-color;
+	width: 65vw;
+	padding: 5rem;
+	background-color: white;
+	color: black;
+	border-radius: 15px;
 	opacity: 0.8;
 	text-align: left;
 	display: flex;
 	flex-direction: column;
+	animation: flicker 6s;
 
 	&--main,
 	&--intro {
-		font-size: 6rem;
+		font-size: 5rem;
 		font-weight: 100;
 		margin: 0;
-		// padding-bottom: 3rem;
+	}
+}
+
+@keyframes flicker {
+	0% {
+		color: blanchedalmond;
+		background-color: white;
+	}
+	1% {
+		color: blanchedalmond;
+		background-color: black;
+	}
+	2% {
+		color: blanchedalmond;
+		background-color: white;
+	}
+	3% {
+		color: blanchedalmond;
+		background-color: black;
+	}
+	95% {
+		color: blanchedalmond;
+		background-color: black;
+	}
+	96% {
+		color: blanchedalmond;
+		background-color: white;
+	}
+	97% {
+		color: blanchedalmond;
+		background-color: black;
+	}
+	98% {
+		color: blanchedalmond;
+		background-color: white;
+	}
+	99% {
+		color: blanchedalmond;
+		background-color: black;
+	}
+	100% {
+		color: black;
+		background-color: white;
 	}
 }
 
 .cursor {
 	border-right: 0.3rem solid #777;
 }
+
+.about {
+	display: flex;
+	flex-direction: column;
+	width: 45vw;
+	margin: 0 5rem 0 auto;
+	align-items: flex-end;
+	padding: 10rem 5rem;
+	font-size: 1.5rem;
+}
+
+.skills {
+	display: flex;
+	padding: 10rem 5rem;
+	font-size: 1.5rem;
+	flex-direction: column;
+
+	&__text {
+		max-width: 45vw;
+	}
+}
+
+.skills ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding: 3rem 3rem;
+	// flex-direction: row;
+}
+// &__item {
+// 	display: inline-block;
+// 	// justify-content: space-around;
+// 	// flex-direction: row;
+// }
 
 .projects {
 	position: relative;

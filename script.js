@@ -29,7 +29,12 @@ class TypeWriter {
 }
 
 // Init on DOM Load
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener(
+	'DOMContentLoaded',
+	setTimeout(() => {
+		init();
+	}, 1500)
+);
 
 // Init
 function init() {
@@ -40,7 +45,7 @@ function init() {
 	new TypeWriter(greetingElement, greeting);
 	setTimeout(function () {
 		new TypeWriter(introElement, introduction);
-	}, 1500);
+	}, 2000);
 	// introOverlay();
 }
 
