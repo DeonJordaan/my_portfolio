@@ -51,9 +51,13 @@ function init() {
 
 function navSlideAnimation() {
 	const logo = document.querySelector('.nav__logo');
+	const scrollLabel = document.querySelector('.welcome__scroll--label');
 	const navItems = document.querySelectorAll('.nav__item');
-	logo.classList.add('slide-down');
-	navItems.forEach(item => item.classList.add('slide-left'));
+	// const welcomeSection = document.querySelector('welcome-section');
+	logo.classList.add('appear');
+	scrollLabel.classList.add('appear');
+	navItems.forEach(item => item.classList.add('appear'));
+	// welcomeSection.classList.add('appear	');
 }
 
 //NOTE - EXTRA INTRO ANIMATION FOR init FUNCTION THAT I CANNOT GET TO WORK
