@@ -34,6 +34,7 @@ h2 {
 h3 {
   font-size: 2rem;
   font-weight: normal;
+  margin: 0;
 }
 
 h4 {
@@ -146,10 +147,15 @@ ul {
 
 .welcome__scroll--label {
   position: absolute;
-  bottom: 0.2rem;
+  bottom: 0.75rem;
   right: 1rem;
   font-size: 1.5rem;
   opacity: 0;
+  transition: all ease-out 1s;
+}
+
+.fade {
+  color: transparent;
 }
 
 @keyframes flicker {
@@ -202,23 +208,32 @@ ul {
 .about {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  padding: 10rem 15rem 0 15rem;
+  padding: 10rem 25rem 0 25rem;
   font-size: 1.5rem;
   box-sizing: border-box;
+  color: #666565;
+}
+
+.about__header {
+  text-align: center;
 }
 
 .skills {
-  padding: 5rem 15rem;
+  padding: 5rem 25rem;
   font-size: 1.5rem;
   box-sizing: border-box;
+  color: #666565;
+}
+
+.skills__header {
+  text-align: center;
 }
 
 .skills__list {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  padding: 3rem 3rem 5rem 3rem;
+  padding: 3rem;
 }
 
 .skills__icon svg {
@@ -256,10 +271,31 @@ ul {
 
 .projects {
   position: relative;
-  padding: 5rem 15rem;
+  padding: 0 25rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  color: #666565;
+}
+
+.projects__header--text {
+  text-align: center;
+}
+
+.projects__main--header {
+  text-align: center;
+}
+
+.projects__main--image {
+  width: 60vw;
+  display: block;
+  margin: 5rem auto 10rem auto;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+  transition: all ease-in 0.2s;
+}
+
+.projects__main--image:hover {
+  transform: scale(1.01);
 }
 
 .projects__main--description {
@@ -311,11 +347,11 @@ svg {
   height: auto;
   width: auto;
   padding: 12rem 20rem 5rem 20rem;
+  color: #666565;
 }
 
 .contact__header {
   text-align: center;
-  align-content: center;
 }
 
 .contact__list {
@@ -352,6 +388,19 @@ svg {
 
 .footer {
   font-size: 1.2rem;
+  text-align: center;
   padding: 2rem;
   color: grey;
+}
+
+.logviewer {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 25rem 0 25rem;
+  font-size: 1.75rem;
+  line-height: 150%;
+}
+
+.logviewer__header {
+  text-align: center;
 }

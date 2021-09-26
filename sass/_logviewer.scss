@@ -1,0 +1,11 @@
+.logviewer {
+	display: flex;
+	flex-direction: column;
+	padding: 10rem 25rem 0 25rem;
+	font-size: 1.75rem;
+	line-height: 150%;
+
+	&__header {
+		text-align: center;
+	}
+}

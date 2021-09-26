@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/main.css" />
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="img/ayrton-senna-helmet-vector.png"
+		/>
+
+		<title id="title">Deon Jordaan - Web Developer</title>
+	</head>
+	<header class="header">
+		<div class="nav-holder">
+			<nav id="navbar" class="header__nav">
+				<ul class="nav">
+					<li class="nav__logo appear">
+						<a href="#welcome-section" class="nav__link"
+							><span>heydeon.dev</span></a
+						>
+					</li>
+					<li class="nav__item nav__about appear">
+						<a href="#welcome-section" class="nav__link"><span>about</span></a>
+					</li>
+					<li class="nav__item nav__projects appear">
+						<a href="#projects" class="nav__link"><span>my work</span></a>
+					</li>
+					<li class="nav__item nav__contact appear">
+						<a href="#contact" class="nav__link"><span>contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="logviewer">
+		<h2 class="logviewer__header">Log Viewer Project Summary</h2>
+		<h4>Project Brief</h4>
+		<p>
+			For this project, the brief was to build a task log viewer to allow the
+			team members to easily scan and analyze the data collected from their
+			various customer facing applications. As the company offers a wide variety
+			of services and processes large amounts of data, the viewer needed to be
+			simple to use and allow for fast navigation and retrieval of information.
+		</p>
+		<h4>Web Stack</h4>
+		<p>
+			I was given free reign to implement the project using any tools or
+			technologies I wanted. With the help of the lead developer, the SQL
+			database was setup on my system to enable my application to interact with
+			the data. Having recently started learning React I decided to use it to
+			build out the project.<br />The component-based architecture and the
+			interchangeability it offers really appeal to my logical thinking.
+			Furthermore, the repetitive presentation of a stack of infinitely nested
+			data seemed the perfect use case to make use of reusable components.
+		</p>
+		<p>
+			To plan the project, I used Figma as I found it intuitive to use. This was
+			especially helpful when it came to analyzing the layout to ensure the
+			interface was as usable as possible.
+		</p>
+		<h4>Thought Process</h4>
+		<p>
+			My highest priority was to present the data as clearly as possible. This
+			was challenging given the amount of data that needed to be presented and
+			the limited screen real estate at my disposal. It was while researching
+			best practices, that I learned the nuanced difference between legibility
+			and readability. This guided my choice of font as well as teaching me to
+			pay attention to the effect a small change in spacing and contrast can
+			have.
+		</p>
+		<p>
+			In order to make interpretation of the data as efficient as possible, I
+			used color to communicate important information. This allows the user to
+			both find this information quickly and to consume it instantly without the
+			need to read and process the text.
+		</p>
+		<h4>Forthcoming Improvements</h4>
+		<p>
+			I'm currently building a data-worker component to separate the data
+			processing functionality from the rest of the components. This worker will
+			incorporate a Fetch request builder that will communicate with the
+			backend. Once the data is received, it will process this data as required
+			and then pass it to the main event context.<br />
+			While the application will almost exclusively be used in a work and office
+			environment on desktop PCs, I intend to make it fully responsive across
+			the full spectrum of devices. Presenting data on smaller devices is
+			particularly challenging and this will give me invaluable experience in
+			creating useable, responsive applications.<br />Currently the Hierarchy
+			View displays the selected sub-event. This will be expanded to show the
+			nested layers as the user clicks through the data. The filtering component
+			will be completed to allow specific filtering by Host, as well as the
+			ability to filter by 'Date' and 'Application'.
+		</p>
+		<h4>What I Learned</h4>
+		<p>
+			The biggest challenge was working out the cause and effect of the
+			rendering (and re-rendering) of components. Coupled with the effects of
+			hooks and how they are intertwined with this process, this proved really
+			tricky to wrap my head around.
+		</p>
+		<p>
+			There's another tangled web analogy in there for sure and mostly it felt
+			like it was wrapped around my head instead! Needless to say, it's going to
+			take some time to really grasp these concepts.
+		</p>
+		<p>
+			Another realization was just how important it is to really get stuck in
+			and apply what I'd learned. I found it difficult to properly plan the
+			layout of components and the flow of data between them, simply because I
+			hadn't the ability to form clear mental models of how they would normally
+			interact. Thus I found it easier to actually start building a basic
+			structure and once it started taking shape, I was able to see a clearer
+			path forward and make adjustments to my original plans. With experience,
+			this understanding will become intuitive.
+		</p>
+	</section>
+</html>

@@ -3,6 +3,7 @@ $primary-color-dark: #2c3e50;
 $color-bluegrey: #778ca3;
 $border-color: rgb(175, 172, 172);
 $bg-color: white;
+$text-color: rgb(102, 101, 101);
 
 html {
 	//This defines what 1rem is
@@ -38,6 +39,7 @@ h2 {
 h3 {
 	font-size: 2rem;
 	font-weight: normal;
+	margin: 0;
 }
 
 h4 {
@@ -151,11 +153,17 @@ ul {
 
 	&__scroll--label {
 		position: absolute;
-		bottom: 0.2rem;
+		bottom: 0.75rem;
 		right: 1rem;
 		font-size: 1.5rem;
 		opacity: 0;
+		transition: all ease-out 1s;
 	}
+}
+
+.fade {
+	// transform: translateX(-300px);
+	color: transparent;
 }
 
 //Flicker animation for landing page background
@@ -210,28 +218,38 @@ ul {
 .about {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
+	// width: 100vw;
 	// margin: 0 5rem 0 auto;
 	// align-items: flex-end;
-	padding: 10rem 15rem 0 15rem;
+	padding: 10rem 25rem 0 25rem;
 	font-size: 1.5rem;
 	box-sizing: border-box;
+	color: $text-color;
+
+	&__header {
+		text-align: center;
+	}
 }
 
 // NOTE: SKILLS SECTION
 .skills {
 	// display: flex;
 	// width: 100vw;
-	padding: 5rem 15rem;
+	padding: 5rem 25rem;
 	font-size: 1.5rem;
 	// flex-direction: column;
 	box-sizing: border-box;
+	color: $text-color;
+
+	&__header {
+		text-align: center;
+	}
 
 	&__list {
 		display: flex;
 		justify-content: space-around;
 		list-style: none;
-		padding: 3rem 3rem 5rem 3rem;
+		padding: 3rem;
 	}
 
 	&__icon svg {
@@ -265,14 +283,35 @@ ul {
 }
 
 // NOTE PROJECTS SECTION
+
 .projects {
 	position: relative;
-	padding: 5rem 15rem;
+	padding: 0 25rem;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	color: $text-color;
+
+	&__header--text {
+		text-align: center;
+	}
 
 	&__main {
+		&--header {
+			text-align: center;
+		}
+		&--image {
+			width: 60vw;
+			display: block;
+			margin: 5rem auto 10rem auto;
+			box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.2);
+			transition: all ease-in 0.2s;
+		}
+
+		&--image:hover {
+			transform: scale(1.01);
+		}
+
 		&--description {
 			font-size: 1.5rem;
 		}
@@ -282,7 +321,6 @@ ul {
 		display: grid;
 		transform-origin: 0;
 		transform: translateZ(3px) scale(0.625);
-		// transform-style: preserve-3d;
 
 		//
 		&--1 {
@@ -357,6 +395,7 @@ svg {
 	height: auto;
 	width: auto;
 	padding: 12rem 20rem 5rem 20rem;
+	color: $text-color;
 	// background-size: cover;
 	// background-position: center;
 	// display: flex;
@@ -367,7 +406,6 @@ svg {
 
 	&__header {
 		text-align: center;
-		align-content: center;
 	}
 
 	&__list {
@@ -408,6 +446,7 @@ svg {
 
 .footer {
 	font-size: 1.2rem;
+	text-align: center;
 	padding: 2rem;
 	color: grey;
 	// background-color: #1488cc;

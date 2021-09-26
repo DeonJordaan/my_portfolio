@@ -119,7 +119,12 @@ ul {
     bottom: 0.2rem;
     right: 1rem;
     font-size: 1.5rem;
-    opacity: 0; }
+    opacity: 0;
+    transition: all ease-out 1s; }
+
+.fade {
+  transform: translateX(-100px);
+  color: transparent; }
 
 @keyframes flicker {
   0% {
@@ -159,15 +164,20 @@ ul {
 .about {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   padding: 10rem 15rem 0 15rem;
   font-size: 1.5rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #666565; }
+  .about__header {
+    text-align: center; }
 
 .skills {
   padding: 5rem 15rem;
   font-size: 1.5rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #666565; }
+  .skills__header {
+    text-align: center; }
   .skills__list {
     display: flex;
     justify-content: space-around;
@@ -196,7 +206,16 @@ ul {
   padding: 5rem 15rem;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  color: #666565; }
+  .projects__header--text {
+    text-align: center; }
+  .projects__main--header {
+    text-align: center; }
+  .projects__main--image {
+    width: 60vw;
+    margin: auto;
+    box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.25); }
   .projects__main--description {
     font-size: 1.5rem; }
   .projects__tile {
@@ -229,10 +248,10 @@ svg {
 .contact {
   height: auto;
   width: auto;
-  padding: 12rem 20rem 5rem 20rem; }
+  padding: 12rem 20rem 5rem 20rem;
+  color: #666565; }
   .contact__header {
-    text-align: center;
-    align-content: center; }
+    text-align: center; }
   .contact__list {
     display: flex;
     justify-content: space-around;
