@@ -149,7 +149,7 @@ ul {
   position: absolute;
   bottom: 0.75rem;
   right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   opacity: 0;
   transition: all ease-out 1s;
 }
@@ -209,7 +209,7 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 10rem 25rem 0 25rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   box-sizing: border-box;
   color: #666565;
 }
@@ -220,7 +220,7 @@ ul {
 
 .skills {
   padding: 5rem 25rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   box-sizing: border-box;
   color: #666565;
 }
@@ -299,48 +299,36 @@ ul {
 }
 
 .projects__main--description {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
-.projects__tile {
-  display: grid;
-  transform-origin: 0;
-  transform: translateZ(3px) scale(0.625);
+.projects__tiles {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.projects__tile--1 {
-  width: 30vw;
-  align-self: flex-start;
-}
-
-.projects__tile--2 {
-  width: 30vw;
-  align-self: flex-end;
-}
-
-.projects__tile--3 {
-  width: 30vw;
-  align-self: flex-start;
-}
-
-.projects__tile--4 {
-  width: 30vw;
-  align-self: flex-end;
-}
-
-.projects__tile--image-1, .projects__tile--image-2, .projects__tile--image-3, .projects__tile--image-4 {
-  max-width: 100%;
-  object-fit: contain;
+.projects__tiles--image-1, .projects__tiles--image-2, .projects__tiles--image-3, .projects__tiles--image-4 {
+  max-width: 30vw;
   border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
 }
 
-.projects__tile--header-1, .projects__tile--header-2, .projects__tile--header-3, .projects__tile--header-4 {
-  font-size: 1.5rem;
-  padding-left: 2rem;
+.projects__tiles--image-1:hover, .projects__tiles--image-2:hover, .projects__tiles--image-3:hover, .projects__tiles--image-4:hover {
+  transform: scale(1.015);
 }
 
-svg {
-  z-index: 100;
+.projects__tiles--header-1, .projects__tiles--header-2, .projects__tiles--header-3, .projects__tiles--header-4 {
+  text-align: center;
+}
+
+.projects__link:hover {
+  transform: translateY(-1px);
 }
 
 .contact {
@@ -403,4 +391,60 @@ svg {
 
 .logviewer__header {
   text-align: center;
+  margin: 5rem 0;
+}
+
+.logviewer__image--screenshot {
+  max-width: 60vw;
+  margin: 5rem auto;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logviewer__image--figma {
+  max-width: 30vw;
+  margin: 3rem;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logviewer__image--flowchart {
+  max-width: 30vw;
+  object-fit: contain;
+  scale: 1;
+  margin: 3rem;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.section__tools {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section__tools--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section__middle--text {
+  margin: 2rem 3rem;
+}
+
+.section__learned {
+  margin: 5rem 10rem;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.disclaimer {
+  margin-top: 3rem;
+  font-size: 1rem;
 }

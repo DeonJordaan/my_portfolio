@@ -7,5 +7,66 @@
 
 	&__header {
 		text-align: center;
+		margin: 5rem 0;
 	}
+
+	&__image {
+		&--screenshot {
+			max-width: 60vw;
+			margin: 5rem auto;
+			box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.2);
+		}
+		&--figma {
+			max-width: 30vw;
+			margin: 3rem;
+			box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.2);
+		}
+
+		&--flowchart {
+			max-width: 30vw;
+			object-fit: contain;
+			// height: auto;
+			scale: 1;
+			margin: 3rem;
+			box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.2);
+		}
+	}
+}
+
+.section {
+	&__tools {
+		margin: 5rem 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&--content {
+			display: flex;
+			flex-direction: column;
+			// align-items: center;
+		}
+	}
+
+	&__middle {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&--text {
+			margin: 2rem 3rem;
+		}
+	}
+
+	&__learned {
+		margin: 5rem 10rem;
+	}
+}
+
+h4 {
+	font-weight: bold;
+}
+
+.disclaimer {
+	margin-top: 3rem;
+	font-size: 1rem;
 }

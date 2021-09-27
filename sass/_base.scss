@@ -4,6 +4,7 @@ $color-bluegrey: #778ca3;
 $border-color: rgb(175, 172, 172);
 $bg-color: white;
 $text-color: rgb(102, 101, 101);
+$text-font: 1.75rem;
 
 html {
 	//This defines what 1rem is
@@ -61,6 +62,7 @@ ul {
 	background-color: $bg-color;
 }
 
+// HEADER & NAVIGATION SECTION
 .header {
 	position: sticky;
 	opacity: 1;
@@ -115,6 +117,7 @@ ul {
 	}
 }
 
+// WELCOME SECTION
 .welcome {
 	height: 85vh;
 	width: 95vw;
@@ -155,14 +158,13 @@ ul {
 		position: absolute;
 		bottom: 0.75rem;
 		right: 1rem;
-		font-size: 1.5rem;
+		font-size: $text-font;
 		opacity: 0;
 		transition: all ease-out 1s;
 	}
 }
 
 .fade {
-	// transform: translateX(-300px);
 	color: transparent;
 }
 
@@ -214,7 +216,7 @@ ul {
 	border-right: 0.3rem solid #777;
 }
 
-// NOTE: ABOUT SECTION
+// ABOUT SECTION
 .about {
 	display: flex;
 	flex-direction: column;
@@ -222,7 +224,7 @@ ul {
 	// margin: 0 5rem 0 auto;
 	// align-items: flex-end;
 	padding: 10rem 25rem 0 25rem;
-	font-size: 1.5rem;
+	font-size: $text-font;
 	box-sizing: border-box;
 	color: $text-color;
 
@@ -231,12 +233,12 @@ ul {
 	}
 }
 
-// NOTE: SKILLS SECTION
+// SKILLS SECTION
 .skills {
 	// display: flex;
 	// width: 100vw;
 	padding: 5rem 25rem;
-	font-size: 1.5rem;
+	font-size: $text-font;
 	// flex-direction: column;
 	box-sizing: border-box;
 	color: $text-color;
@@ -282,8 +284,7 @@ ul {
 	}
 }
 
-// NOTE PROJECTS SECTION
-
+// PROJECTS SECTION
 .projects {
 	position: relative;
 	padding: 0 25rem;
@@ -313,96 +314,55 @@ ul {
 		}
 
 		&--description {
-			font-size: 1.5rem;
+			font-size: $text-font;
 		}
 	}
 
-	&__tile {
-		display: grid;
-		transform-origin: 0;
-		transform: translateZ(3px) scale(0.625);
+	&__tiles {
+		padding: 5rem 0;
+		display: flex;
+		flex-direction: row;
+		gap: 5rem;
+		flex-flow: row wrap;
+		justify-content: center;
 
-		//
-		&--1 {
-			width: 30vw;
-			align-self: flex-start;
-			// grid-column: 1 / 2;
-			// grid-row: 2 / 5;
+		&--image-1,
+		&--image-2,
+		&--image-3,
+		&--image-4 {
+			max-width: 30vw;
+			border-radius: 5px;
+			margin-top: 1rem;
+			box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.2);
+			transition: transform 0.2s ease-in-out;
 		}
 
-		&--2 {
-			width: 30vw;
-			align-self: flex-end;
-			// grid-column: 2 / 3;
-			// grid-row: 4 / 7;
+		&--image-1:hover,
+		&--image-2:hover,
+		&--image-3:hover,
+		&--image-4:hover {
+			transform: scale(1.015);
 		}
 
-		&--3 {
-			width: 30vw;
-			align-self: flex-start;
-			// grid-column: 1 / 2;
-			// grid-row: 6 / 9;
-		}
-
-		&--4 {
-			width: 30vw;
-			align-self: flex-end;
-			// grid-column: 2 / 3;
-			// grid-row: 8 / 11;
+		&--header-1,
+		&--header-2,
+		&--header-3,
+		&--header-4 {
+			text-align: center;
 		}
 	}
 
-	// &__grid {
-	// 	display: grid;
-	// 	grid-template-columns: repeat(2, 1fr);
-	// 	grid-template-rows: auto;
-	// 	align-content: center;
-	// 	padding: 12rem 6rem;
-	// }
-
-	&__tile--image-1,
-	&__tile--image-2,
-	&__tile--image-3,
-	&__tile--image-4 {
-		// height: auto;
-		max-width: 100%;
-		object-fit: contain;
-		border-radius: 5px;
-	}
-
-	&__tile--header-1,
-	&__tile--header-2,
-	&__tile--header-3,
-	&__tile--header-4 {
-		font-size: 1.5rem;
-		padding-left: 2rem;
+	&__link:hover {
+		transform: translateY(-1px);
 	}
 }
 
-svg {
-	z-index: 100;
-}
-
-// .contact {
-// 	height: 85vh;
-// 	width: auto;
-// 	padding: 12rem 20rem 12rem 20rem;
-// 	background-size: cover;
-// 	background-position: center;
-// }
-
+// CONTACT SECTION
 .contact {
 	height: auto;
 	width: auto;
 	padding: 12rem 20rem 5rem 20rem;
 	color: $text-color;
-	// background-size: cover;
-	// background-position: center;
-	// display: flex;
-	// flex-direction: column;
-	// font-size: 1.5rem;
-	// justify-content: space-around;
-	// align-content: center;
 
 	&__header {
 		text-align: center;
@@ -419,11 +379,6 @@ svg {
 		width: 3rem;
 		height: 3rem;
 	}
-
-	// &__icon svg {
-	// 	height: 3rem;
-	// 	width: 3rem;
-	// }
 
 	&__icon {
 		&--email {
@@ -444,10 +399,10 @@ svg {
 	}
 }
 
+// FOOTER SECTION
 .footer {
 	font-size: 1.2rem;
 	text-align: center;
 	padding: 2rem;
 	color: grey;
-	// background-color: #1488cc;
 }
