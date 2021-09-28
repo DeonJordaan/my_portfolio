@@ -1,0 +1,34 @@
+.nav-holder {
+	background-color: $bg-color;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 2.5vh;
+	background-color: $bg-color;
+	border-radius: 1rem;
+	padding: 3rem 2rem;
+
+	&__logo {
+		font-size: 2.5rem;
+		font-weight: 500;
+		list-style: none;
+		padding: 0 2rem;
+		opacity: 0;
+	}
+
+	.nav__item {
+		font-size: 1.8rem;
+		font-weight: 300;
+		list-style: none;
+		padding: 0 2rem;
+		opacity: 0;
+	}
+}
+
+.appear {
+	animation: appear 3s ease-out 3s;
+	animation-fill-mode: forwards;
+}

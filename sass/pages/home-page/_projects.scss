@@ -1,0 +1,72 @@
+// PROJECTS SECTION
+.projects {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	color: $text-color;
+	margin: 0 auto;
+	padding: 0 25rem;
+
+	&__header--text {
+		text-align: center;
+	}
+
+	&__main {
+		&--header {
+			text-align: center;
+		}
+		&--image {
+			display: block;
+			width: 60vw;
+			margin: 5rem auto 10rem auto;
+			box-shadow: $image-shadow;
+			transition: all ease-in 0.2s;
+		}
+
+		&--image:hover {
+			transform: scale(1.01);
+		}
+
+		&--description {
+			font-size: $text-font;
+		}
+	}
+
+	&__tiles {
+		display: flex;
+		flex-direction: row;
+		flex-flow: row wrap;
+		justify-content: center;
+		gap: 5rem;
+		padding: 5rem 0;
+
+		&--image-1,
+		&--image-2,
+		&--image-3,
+		&--image-4 {
+			max-width: 30vw;
+			margin-top: 1rem;
+			border-radius: 5px;
+			box-shadow: $image-shadow;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		&--image-1:hover,
+		&--image-2:hover,
+		&--image-3:hover,
+		&--image-4:hover {
+			transform: scale(1.015);
+		}
+
+		&--header-1,
+		&--header-2,
+		&--header-3,
+		&--header-4 {
+			text-align: center;
+		}
+	}
+
+	&__link:hover {
+		transform: translateY(-1px);
+	}
+}

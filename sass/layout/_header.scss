@@ -1,0 +1,9 @@
+// HEADER & NAVIGATION SECTION
+.header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: $bg-color;
+	opacity: 1;
+	z-index: 3;
+}

@@ -9,11 +9,67 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: white;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    color: #fae9ce;
+    background-color: white;
+  }
+  1% {
+    color: #fae9ce;
+    background-color: #1c1919;
+  }
+  2% {
+    color: #fae9ce;
+    background-color: white;
+  }
+  3% {
+    color: #fae9ce;
+    background-color: #1c1919;
+  }
+  95% {
+    color: #fae9ce;
+    background-color: #1c1919;
+  }
+  96% {
+    color: #fae9ce;
+    background-color: white;
+  }
+  97% {
+    color: #fae9ce;
+    background-color: #1c1919;
+  }
+  98% {
+    color: #fae9ce;
+    background-color: white;
+  }
+  99% {
+    color: #fae9ce;
+    background-color: #1c1919;
+  }
+  100% {
+    color: black;
+    background-color: transparent;
+  }
 }
 
 a {
@@ -52,16 +108,19 @@ ul {
   margin: 0;
 }
 
-.container {
-  background-color: white;
+.footer {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+  color: grey;
 }
 
 .header {
   position: sticky;
-  opacity: 1;
   top: 0;
   width: 100%;
   background-color: white;
+  opacity: 1;
   z-index: 3;
 }
 
@@ -70,13 +129,13 @@ ul {
 }
 
 .nav {
-  height: 2.5vh;
   display: flex;
   justify-content: space-between;
-  padding: 3rem 2rem;
+  align-items: center;
+  height: 2.5vh;
   background-color: white;
   border-radius: 1rem;
-  align-items: center;
+  padding: 3rem 2rem;
 }
 
 .nav__logo {
@@ -100,44 +159,35 @@ ul {
   animation-fill-mode: forwards;
 }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .welcome {
-  height: 85vh;
-  width: 95vw;
-  margin: auto;
-  border-radius: 1rem;
-  background-size: cover;
-  background-position: right 0 top 0;
   position: relative;
+  width: 95vw;
+  height: 85vh;
   justify-content: center;
+  margin: auto;
   background-image: url(../img/plants-SML.jpg);
+  background-position: right 0 top 0;
+  background-size: cover;
+  border-radius: 1rem;
 }
 
 .welcome__text {
-  box-sizing: border-box;
   position: absolute;
   top: 55%;
   left: 0%;
-  transform: translate(0%, -55%);
-  height: 100%;
-  width: 100%;
-  padding: 0 5rem;
-  background-color: transparent;
-  color: black;
-  border-radius: 15px;
-  opacity: 1;
-  text-align: left;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: black;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 0 5rem;
+  opacity: 1;
   animation: flicker 6s;
+  transform: translate(0%, -55%);
 }
 
 .welcome__text--main, .welcome__text--intro {
@@ -158,49 +208,6 @@ ul {
   color: transparent;
 }
 
-@keyframes flicker {
-  0% {
-    color: blanchedalmond;
-    background-color: white;
-  }
-  1% {
-    color: blanchedalmond;
-    background-color: #1c1919;
-  }
-  2% {
-    color: blanchedalmond;
-    background-color: white;
-  }
-  3% {
-    color: blanchedalmond;
-    background-color: #1c1919;
-  }
-  95% {
-    color: blanchedalmond;
-    background-color: #1c1919;
-  }
-  96% {
-    color: blanchedalmond;
-    background-color: white;
-  }
-  97% {
-    color: blanchedalmond;
-    background-color: #1c1919;
-  }
-  98% {
-    color: blanchedalmond;
-    background-color: white;
-  }
-  99% {
-    color: blanchedalmond;
-    background-color: #1c1919;
-  }
-  100% {
-    color: black;
-    background-color: transparent;
-  }
-}
-
 .cursor {
   border-right: 0.3rem solid #777;
 }
@@ -208,10 +215,10 @@ ul {
 .about {
   display: flex;
   flex-direction: column;
-  padding: 10rem 25rem 0 25rem;
-  font-size: 1.75rem;
   box-sizing: border-box;
+  font-size: 1.75rem;
   color: #666565;
+  padding: 10rem 25rem 0 25rem;
 }
 
 .about__header {
@@ -219,10 +226,10 @@ ul {
 }
 
 .skills {
-  padding: 5rem 25rem;
-  font-size: 1.75rem;
   box-sizing: border-box;
+  font-size: 1.75rem;
   color: #666565;
+  padding: 5rem 25rem;
 }
 
 .skills__header {
@@ -232,13 +239,13 @@ ul {
 .skills__list {
   display: flex;
   justify-content: space-around;
-  list-style: none;
   padding: 3rem;
+  list-style: none;
 }
 
 .skills__icon svg {
-  height: 3rem;
   width: 3rem;
+  height: 3rem;
 }
 
 .skills__icon--html {
@@ -271,11 +278,11 @@ ul {
 
 .projects {
   position: relative;
-  padding: 0 25rem;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   color: #666565;
+  margin: 0 auto;
+  padding: 0 25rem;
 }
 
 .projects__header--text {
@@ -287,8 +294,8 @@ ul {
 }
 
 .projects__main--image {
-  width: 60vw;
   display: block;
+  width: 60vw;
   margin: 5rem auto 10rem auto;
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
   transition: all ease-in 0.2s;
@@ -303,18 +310,18 @@ ul {
 }
 
 .projects__tiles {
-  padding: 5rem 0;
   display: flex;
   flex-direction: row;
-  gap: 5rem;
   flex-flow: row wrap;
   justify-content: center;
+  gap: 5rem;
+  padding: 5rem 0;
 }
 
 .projects__tiles--image-1, .projects__tiles--image-2, .projects__tiles--image-3, .projects__tiles--image-4 {
   max-width: 30vw;
-  border-radius: 5px;
   margin-top: 1rem;
+  border-radius: 5px;
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
 }
@@ -334,8 +341,8 @@ ul {
 .contact {
   height: auto;
   width: auto;
-  padding: 12rem 20rem 5rem 20rem;
   color: #666565;
+  padding: 12rem 20rem 5rem 20rem;
 }
 
 .contact__header {
@@ -374,19 +381,12 @@ ul {
   fill: #25d366;
 }
 
-.footer {
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 2rem;
-  color: grey;
-}
-
 .logviewer {
   display: flex;
   flex-direction: column;
-  padding: 10rem 25rem 0 25rem;
   font-size: 1.75rem;
   line-height: 150%;
+  padding: 10rem 25rem 0 25rem;
 }
 
 .logviewer__header {
@@ -408,17 +408,17 @@ ul {
 
 .logviewer__image--flowchart {
   max-width: 30vw;
+  margin: 3rem;
   object-fit: contain;
   scale: 1;
-  margin: 3rem;
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
 }
 
 .section__tools {
-  margin: 5rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 5rem 0;
 }
 
 .section__tools--content {
@@ -445,6 +445,6 @@ h4 {
 }
 
 .disclaimer {
-  margin-top: 3rem;
   font-size: 1rem;
+  margin-top: 3rem;
 }

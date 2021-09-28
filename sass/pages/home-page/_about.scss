@@ -1,0 +1,13 @@
+// ABOUT SECTION
+.about {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	font-size: $text-font;
+	color: $text-color;
+	padding: 10rem 25rem 0 25rem;
+
+	&__header {
+		text-align: center;
+	}
+}

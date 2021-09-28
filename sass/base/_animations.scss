@@ -1,0 +1,54 @@
+// Fade-in animation for logo and navigation
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+//Flicker animation for landing page background
+@keyframes flicker {
+	0% {
+		color: $typing-color;
+		background-color: white;
+	}
+	1% {
+		color: $typing-color;
+		background-color: $screen-color;
+	}
+	2% {
+		color: $typing-color;
+		background-color: white;
+	}
+	3% {
+		color: $typing-color;
+		background-color: $screen-color;
+	}
+	95% {
+		color: $typing-color;
+		background-color: $screen-color;
+	}
+	96% {
+		color: $typing-color;
+		background-color: white;
+	}
+	97% {
+		color: $typing-color;
+		background-color: $screen-color;
+	}
+	98% {
+		color: $typing-color;
+		background-color: white;
+	}
+	99% {
+		color: $typing-color;
+		background-color: $screen-color;
+	}
+	100% {
+		color: black;
+		background-color: transparent;
+	}
+}

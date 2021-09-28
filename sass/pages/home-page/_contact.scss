@@ -1,0 +1,41 @@
+// CONTACT SECTION
+.contact {
+	height: auto;
+	width: auto;
+	color: $text-color;
+	padding: 12rem 20rem 5rem 20rem;
+
+	&__header {
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+		padding: 3rem 3rem 5rem 3rem;
+	}
+
+	&__icon svg {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	&__icon {
+		&--email {
+			fill: #ea4335;
+		}
+		&--github {
+			fill: #181717;
+		}
+		&--linkedin {
+			fill: #0a66c2;
+		}
+		&--twitter {
+			fill: #1da1f2;
+		}
+		&--react {
+			fill: #25d366;
+		}
+	}
+}
