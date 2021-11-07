@@ -2,7 +2,7 @@
 .contact {
 	height: auto;
 	width: auto;
-	color: $text-color;
+	// color: $text-color;
 	padding: 12rem 20rem 5rem 20rem;
 
 	&__header {
@@ -21,7 +21,9 @@
 		height: 3rem;
 	}
 
-	&__icon {
+	&__icon,
+	&__icon svg,
+	&__icon a {
 		&--email {
 			fill: #ea4335;
 		}
@@ -34,7 +36,7 @@
 		&--twitter {
 			fill: #1da1f2;
 		}
-		&--react {
+		&--phone {
 			fill: #25d366;
 		}
 	}

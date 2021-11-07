@@ -31,39 +31,39 @@ body {
 
 @keyframes flicker {
   0% {
-    color: #fae9ce;
+    color: white;
     background-color: white;
   }
   1% {
-    color: #fae9ce;
+    color: white;
     background-color: #1c1919;
   }
   2% {
-    color: #fae9ce;
+    color: white;
     background-color: white;
   }
   3% {
-    color: #fae9ce;
+    color: white;
     background-color: #1c1919;
   }
   95% {
-    color: #fae9ce;
+    color: white;
     background-color: #1c1919;
   }
   96% {
-    color: #fae9ce;
+    color: white;
     background-color: white;
   }
   97% {
-    color: #fae9ce;
+    color: white;
     background-color: #1c1919;
   }
   98% {
-    color: #fae9ce;
+    color: white;
     background-color: white;
   }
   99% {
-    color: #fae9ce;
+    color: white;
     background-color: #1c1919;
   }
   100% {
@@ -74,7 +74,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 h1 {
@@ -341,7 +341,6 @@ ul {
 .contact {
   height: auto;
   width: auto;
-  color: #666565;
   padding: 12rem 20rem 5rem 20rem;
 }
 
@@ -361,23 +360,33 @@ ul {
   height: 3rem;
 }
 
-.contact__icon--email {
+.contact__icon--email,
+.contact__icon svg--email,
+.contact__icon a--email {
   fill: #ea4335;
 }
 
-.contact__icon--github {
+.contact__icon--github,
+.contact__icon svg--github,
+.contact__icon a--github {
   fill: #181717;
 }
 
-.contact__icon--linkedin {
+.contact__icon--linkedin,
+.contact__icon svg--linkedin,
+.contact__icon a--linkedin {
   fill: #0a66c2;
 }
 
-.contact__icon--twitter {
+.contact__icon--twitter,
+.contact__icon svg--twitter,
+.contact__icon a--twitter {
   fill: #1da1f2;
 }
 
-.contact__icon--react {
+.contact__icon--phone,
+.contact__icon svg--phone,
+.contact__icon a--phone {
   fill: #25d366;
 }
 
