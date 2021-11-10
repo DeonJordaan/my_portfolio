@@ -40,9 +40,9 @@ document.addEventListener(
 
 // Initilisation for the typing and fade-in animation
 function init() {
-	const greetingElement = document.querySelector('.welcome-text--main');
+	const greetingElement = document.querySelector('.welcome__text--main');
 	const greeting = greetingElement.getAttribute('data-textGreet');
-	const introElement = document.querySelector('.welcome-text--intro');
+	const introElement = document.querySelector('.welcome__text--intro');
 	const introduction = introElement.getAttribute('data-textIntro');
 	new TypeWriter(greetingElement, greeting);
 	setTimeout(function () {
@@ -65,7 +65,7 @@ function navAnimation() {
 
 // Intersection Observer to fade out scroll label
 function scrollLabelFade() {
-	const headerSection = document.querySelector('.welcome-text--main');
+	const headerSection = document.querySelector('.welcome__text--main');
 	const scrollLabel = document.querySelector('.welcome__scroll--label');
 
 	const observerCallback = entries => {

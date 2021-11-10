@@ -2,8 +2,23 @@
 .contact {
 	height: auto;
 	width: auto;
-	// color: $text-color;
 	padding: 12rem 20rem 5rem 20rem;
+
+	@include respond(tab-land) {
+		padding: 2.5rem 15rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 3.5rem 8rem;
+	}
+
+	@include respond(phone) {
+		padding: 3rem;
+	}
+
+	@include respond(big-desktop) {
+		padding: 0 25rem;
+	}
 
 	&__header {
 		text-align: center;
@@ -19,6 +34,16 @@
 	&__icon svg {
 		width: 3rem;
 		height: 3rem;
+
+		@include respond(tab-port) {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+
+		@include respond(phone) {
+			width: 2.25rem;
+			height: 2.25rem;
+		}
 	}
 
 	&__icon,

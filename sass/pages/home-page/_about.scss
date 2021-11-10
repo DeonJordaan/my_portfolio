@@ -5,9 +5,21 @@
 	box-sizing: border-box;
 	font-size: $text-font;
 	color: $text-color;
-	padding: 10rem 25rem 0 25rem;
+	padding: 8rem 20rem 0 20rem;
 
-	&__header {
-		text-align: center;
+	@include respond(tab-land) {
+		padding: 2.5rem 15rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 2.5rem 8rem;
+	}
+
+	@include respond(phone) {
+		padding: 3rem;
+	}
+
+	@include respond(big-desktop) {
+		padding: 0 25rem;
 	}
 }

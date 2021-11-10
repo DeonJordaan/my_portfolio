@@ -5,7 +5,23 @@
 	flex-direction: column;
 	color: $text-color;
 	margin: 0 auto;
-	padding: 0 25rem;
+	padding: 0 20rem;
+
+	@include respond(tab-land) {
+		padding: 2.5rem 15rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 0 8rem;
+	}
+
+	@include respond(phone) {
+		padding: 0 3.5rem;
+	}
+
+	@include respond(big-desktop) {
+		padding: 0 25rem;
+	}
 
 	&__header--text {
 		text-align: center;
@@ -17,10 +33,14 @@
 		}
 		&--image {
 			display: block;
-			width: 60vw;
+			width: 100%;
 			margin: 5rem auto 10rem auto;
 			box-shadow: $image-shadow;
 			transition: all ease-in 0.2s;
+
+			@include respond(phone) {
+				margin: 5rem auto 5rem auto;
+			}
 		}
 
 		&--image:hover {
@@ -33,18 +53,28 @@
 	}
 
 	&__tiles {
-		display: flex;
-		flex-direction: row;
-		flex-flow: row wrap;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		justify-content: center;
 		gap: 5rem;
-		padding: 5rem 0;
+
+		@include respond(big-desktop) {
+			padding: 5rem 0;
+		}
+
+		@include respond(phone) {
+			gap: 2rem;
+			display: flex;
+			flex-direction: column;
+			width: 80%;
+			margin: 0 auto;
+		}
 
 		&--image-1,
 		&--image-2,
 		&--image-3,
 		&--image-4 {
-			max-width: 30vw;
+			width: 100%;
 			margin-top: 1rem;
 			border-radius: 5px;
 			box-shadow: $image-shadow;
@@ -64,9 +94,5 @@
 		&--header-4 {
 			text-align: center;
 		}
-	}
-
-	&__link:hover {
-		transform: translateY(-1px);
 	}
 }

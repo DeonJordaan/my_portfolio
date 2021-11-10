@@ -5,29 +5,57 @@
 	line-height: 150%;
 	padding: 10rem 25rem 0 25rem;
 
+	@include respond(tab-land) {
+		padding: 2.5rem 15rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 2.5rem 8rem;
+	}
+
+	@include respond(phone) {
+		padding: 3rem;
+	}
+
+	@include respond(big-desktop) {
+		padding: 0 25rem;
+	}
+
 	&__header {
 		text-align: center;
 		margin: 5rem 0;
+
+		@include respond(phone) {
+			margin: 2rem 0;
+		}
 	}
 
 	&__image {
 		&--screenshot {
-			max-width: 60vw;
-			margin: 5rem auto;
+			width: 100%;
+			margin: 2.5rem auto;
 			box-shadow: $image-shadow;
 		}
 		&--figma {
-			max-width: 30vw;
-			margin: 3rem;
+			width: 50%;
+			margin-right: 3rem;
 			box-shadow: $image-shadow;
+
+			@include respond(tab-port) {
+				width: 80%;
+				margin: auto;
+			}
 		}
 
 		&--flowchart {
-			max-width: 30vw;
-			margin: 3rem;
-			object-fit: contain;
-			scale: 1;
+			width: 50%;
+			margin-left: 3rem;
 			box-shadow: $image-shadow;
+
+			@include respond(tab-port) {
+				width: 80%;
+				margin: auto;
+			}
 		}
 	}
 }
@@ -38,6 +66,14 @@
 		flex-direction: row;
 		align-items: center;
 		margin: 5rem 0;
+
+		@include respond(tab-port) {
+			flex-direction: column-reverse;
+		}
+
+		@include respond(phone) {
+			margin: 2rem 0;
+		}
 
 		&--content {
 			display: flex;
@@ -50,18 +86,15 @@
 		flex-direction: row;
 		align-items: center;
 
+		@include respond(tab-port) {
+			flex-direction: column;
+		}
+
 		&--text {
-			margin: 2rem 3rem;
+			display: flex;
+			flex-direction: column;
 		}
 	}
-
-	&__learned {
-		margin: 5rem 10rem;
-	}
-}
-
-h4 {
-	font-weight: bold;
 }
 
 .disclaimer {
