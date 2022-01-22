@@ -1,2 +1,4 @@
-# WebDevTemplate
-Starter files for Web Development projects
+# Portfolio
+Repository for my personal portfolio site.
+
+www.deon.dev
