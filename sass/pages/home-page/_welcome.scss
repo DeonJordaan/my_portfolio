@@ -5,7 +5,26 @@
 	height: 85vh;
 	justify-content: center;
 	margin: auto;
-	background-image: url(../img/plants-SML.jpg);
+	// background-image: url(../img/plants-SML.jpg);
+	background-image: linear-gradient(
+		0deg,
+		hsl(345deg 100% 42%),
+		0%,
+		hsl(38deg 61% 53%),
+		14%,
+		hsl(80deg 63% 58%),
+		26%,
+		hsl(146deg 42% 57%),
+		37%,
+		hsl(195deg 52% 43%),
+		47%,
+		hsl(233deg 61% 42%),
+		54%,
+		hsl(241deg 67% 26%),
+		57%,
+		hsl(267deg 100% 7%),
+		56%
+	);
 	background-position: right 0 top 0;
 	background-size: cover;
 	border-radius: 1rem;
@@ -41,3 +60,15 @@
 .cursor {
 	border-right: 0.3rem solid #777;
 }
+
+// background-image: linear-gradient(
+//   0deg,
+//   hsl(345deg 100% 42%) 0%,
+//   hsl(38deg 61% 53%) 14%,
+//   hsl(80deg 63% 58%) 26%,
+//   hsl(146deg 42% 57%) 37%,
+//   hsl(195deg 52% 43%) 47%,
+//   hsl(233deg 61% 42%) 54%,
+//   hsl(241deg 67% 26%) 57%,
+//   hsl(267deg 100% 7%) 56%
+// );
