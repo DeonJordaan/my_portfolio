@@ -70,7 +70,6 @@ function scrollLabelFade() {
 
 	const observerCallback = entries => {
 		const [entry] = entries;
-		console.log(entry);
 		if (!entry.isIntersecting) scrollLabel.classList.add('fade');
 		else scrollLabel.classList.remove('fade');
 	};
