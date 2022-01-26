@@ -18,6 +18,7 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 @media (max-width: 37.5em) {
@@ -103,7 +104,7 @@ body {
     background-color: #1c1919;
   }
   100% {
-    color: black;
+    color: transparent;
     background-color: transparent;
   }
 }
@@ -152,7 +153,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: left;
-  color: black;
+  color: transparent;
   background-color: transparent;
   border-radius: 15px;
   padding: 5rem;
@@ -269,19 +270,24 @@ p {
 
 .welcome {
   position: relative;
-  width: 95vw;
+  width: 85vw;
   height: 85vh;
-  justify-content: center;
   margin: auto;
-  background-image: linear-gradient( 0deg, hsl(345deg 100% 42%) 0%, hsl(38deg 61% 53%) 14%, hsl(80deg 63% 58%) 26%, hsl(146deg 42% 57%) 37%, hsl(195deg 52% 43%) 47%, hsl(233deg 61% 42%) 54%, hsl(241deg 67% 26%) 57%, hsl(267deg 100% 7%) 56%, );
+  background: url(../../../img/anger_flipped.png);
   background-position: right 0 top 0;
   background-size: cover;
   border-radius: 1rem;
 }
 
+.welcome__art-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .welcome__scroll--label {
   position: absolute;
-  bottom: 0.75rem;
+  bottom: -0.4rem;
   right: 1rem;
   font-size: 1.75rem;
   opacity: 0;

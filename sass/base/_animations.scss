@@ -48,7 +48,8 @@
 		background-color: $screen-color;
 	}
 	100% {
-		color: black;
+		// color: black;
+		color: transparent;
 		background-color: transparent;
 	}
 }
