@@ -173,14 +173,25 @@ body {
   }
 }
 
+.welcome__text--holder {
+  width: 70%;
+}
+
 .welcome__text--main, .welcome__text--intro {
+  width: 75%;
   font-size: 5rem;
   font-weight: 100;
 }
 
+@media (max-width: 56.25em) {
+  .welcome__text--main, .welcome__text--intro {
+    font-size: 4.25rem;
+  }
+}
+
 @media (max-width: 37.5em) {
   .welcome__text--main, .welcome__text--intro {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
