@@ -52,6 +52,42 @@
 		}
 	}
 
+	&__sub {
+		&--header {
+			text-align: center;
+		}
+		&--image {
+			display: block;
+			width: 50%;
+			margin: 3rem auto;
+			box-shadow: $image-shadow;
+			transition: all ease-in 0.2s;
+
+			@include respond(phone) {
+				margin: 5rem auto 5rem auto;
+			}
+		}
+
+		&--image:hover {
+			transform: scale(1.01);
+		}
+
+		&--description {
+			font-size: $text-font;
+		}
+
+		&--story {
+			margin: 5rem auto 10rem auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&--text {
+			// text-align: center;
+			padding: 0 0rem;
+		}
+	}
+
 	&__tiles {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

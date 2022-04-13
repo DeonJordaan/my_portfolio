@@ -322,6 +322,27 @@ p {
     transform: scale(1.01); }
   .projects__main--description {
     font-size: 1.75rem; }
+  .projects__sub--header {
+    text-align: center; }
+  .projects__sub--image {
+    display: block;
+    width: 50%;
+    margin: 3rem auto;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+    transition: all ease-in 0.2s; }
+    @media (max-width: 37.5em) {
+      .projects__sub--image {
+        margin: 5rem auto 5rem auto; } }
+  .projects__sub--image:hover {
+    transform: scale(1.01); }
+  .projects__sub--description {
+    font-size: 1.75rem; }
+  .projects__sub--story {
+    margin: 5rem auto 10rem auto;
+    display: flex;
+    flex-direction: column; }
+  .projects__sub--text {
+    padding: 0 0rem; }
   .projects__tiles {
     display: grid;
     grid-template-columns: 1fr 1fr;
