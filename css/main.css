@@ -68,35 +68,7 @@ body {
 @keyframes flicker {
   0% {
     color: white;
-    background-color: white;
-  }
-  1% {
-    color: white;
     background-color: #1c1919;
-  }
-  2% {
-    color: white;
-    background-color: white;
-  }
-  3% {
-    color: white;
-    background-color: #1c1919;
-  }
-  95% {
-    color: white;
-    background-color: #1c1919;
-  }
-  96% {
-    color: white;
-    background-color: white;
-  }
-  97% {
-    color: white;
-    background-color: #1c1919;
-  }
-  98% {
-    color: white;
-    background-color: white;
   }
   99% {
     color: white;
@@ -157,7 +129,7 @@ body {
   border-radius: 15px;
   padding: 5rem;
   opacity: 1;
-  animation: flicker 6s;
+  animation: flicker 6s ease-in forwards;
 }
 
 @media (max-width: 56.25em) {

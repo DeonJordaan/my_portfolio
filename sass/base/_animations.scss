@@ -13,36 +13,36 @@
 @keyframes flicker {
 	0% {
 		color: $typing-color;
-		background-color: white;
-	}
-	1% {
-		color: $typing-color;
 		background-color: $screen-color;
 	}
-	2% {
-		color: $typing-color;
-		background-color: white;
-	}
-	3% {
-		color: $typing-color;
-		background-color: $screen-color;
-	}
-	95% {
-		color: $typing-color;
-		background-color: $screen-color;
-	}
-	96% {
-		color: $typing-color;
-		background-color: white;
-	}
-	97% {
-		color: $typing-color;
-		background-color: $screen-color;
-	}
-	98% {
-		color: $typing-color;
-		background-color: white;
-	}
+	// 1% {
+	// 	color: $typing-color;
+	// 	background-color: $screen-color;
+	// }
+	// 2% {
+	// 	color: $typing-color;
+	// 	background-color: white;
+	// }
+	// 3% {
+	// 	color: $typing-color;
+	// 	background-color: $screen-color;
+	// }
+	// 95% {
+	// 	color: $typing-color;
+	// 	background-color: $screen-color;
+	// }
+	// 96% {
+	// 	color: $typing-color;
+	// 	background-color: white;
+	// }
+	// 97% {
+	// 	color: $typing-color;
+	// 	background-color: $screen-color;
+	// }
+	// 98% {
+	// 	color: $typing-color;
+	// 	background-color: white;
+	// }
 	99% {
 		color: $typing-color;
 		background-color: $screen-color;

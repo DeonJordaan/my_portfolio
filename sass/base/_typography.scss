@@ -45,7 +45,7 @@
 	border-radius: 15px;
 	padding: 5rem;
 	opacity: 1;
-	animation: flicker 6s;
+	animation: flicker 6s ease-in forwards;
 
 	@include respond(tab-port) {
 		border-radius: 0;
