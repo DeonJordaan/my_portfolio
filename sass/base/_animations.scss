@@ -10,45 +10,60 @@
 }
 
 //Flicker animation for landing page background
-@keyframes flicker {
+@keyframes typingfade {
 	0% {
 		color: $typing-color;
-		background-color: $screen-color;
+		// background-color: $screen-color;
 	}
-	// 1% {
-	// 	color: $typing-color;
-	// 	background-color: $screen-color;
-	// }
-	// 2% {
-	// 	color: $typing-color;
-	// 	background-color: white;
-	// }
-	// 3% {
-	// 	color: $typing-color;
-	// 	background-color: $screen-color;
-	// }
-	// 95% {
-	// 	color: $typing-color;
-	// 	background-color: $screen-color;
-	// }
-	// 96% {
-	// 	color: $typing-color;
-	// 	background-color: white;
-	// }
-	// 97% {
-	// 	color: $typing-color;
-	// 	background-color: $screen-color;
-	// }
-	// 98% {
-	// 	color: $typing-color;
-	// 	background-color: white;
-	// }
+
 	99% {
 		color: $typing-color;
-		background-color: $screen-color;
+		// background-color: $screen-color;
 	}
 	100% {
 		color: black;
+		// background-color: transparent;
+	}
+}
+
+@keyframes backgroundfade {
+	0% {
+		background-color: $screen-color;
+	}
+
+	// 99% {
+	// 	background-color: $screen-color;
+	// }
+	100% {
 		background-color: transparent;
 	}
 }
+
+// 1% {
+// 	color: $typing-color;
+// 	background-color: $screen-color;
+// }
+// 2% {
+// 	color: $typing-color;
+// 	background-color: white;
+// }
+// 3% {
+// 	color: $typing-color;
+// 	background-color: $screen-color;
+// }
+// 95% {
+// 	color: $typing-color;
+// 	background-color: $screen-color;
+// }
+// 96% {
+// 	color: $typing-color;
+// 	background-color: white;
+// }
+// 97% {
+// 	color: $typing-color;
+// 	background-color: $screen-color;
+// }
+// 98% {
+// 	color: $typing-color;
+// 	background-color: white;
+// }

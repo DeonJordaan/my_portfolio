@@ -46,15 +46,18 @@ body {
   100% {
     opacity: 1; } }
 
-@keyframes flicker {
+@keyframes typingfade {
   0% {
-    color: white;
-    background-color: #1c1919; }
+    color: white; }
   99% {
-    color: white;
+    color: white; }
+  100% {
+    color: black; } }
+
+@keyframes backgroundfade {
+  0% {
     background-color: #1c1919; }
   100% {
-    color: black;
     background-color: transparent; } }
 
 .nav__logo {
@@ -93,11 +96,11 @@ body {
   height: 100%;
   text-align: left;
   color: black;
-  background-color: transparent;
+  background-color: black;
   border-radius: 15px;
   padding: 5rem;
   opacity: 1;
-  animation: flicker 6s ease-in forwards; }
+  animation: typingfade 6s ease-in forwards, backgroundfade 1s ease-in 5s forwards; }
   @media (max-width: 56.25em) {
     .welcome__text {
       border-radius: 0; } }
