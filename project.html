@@ -55,13 +55,14 @@
 			<h2 class="logviewer__header">Log Viewer Project Summary</h2>
 			<!-- <h4>Project Brief</h4> -->
 			<p>
-				For this project, the brief was to build a task log viewer to allow team
-				members to easily scan and analyze the data collected from the company's
-				various customer facing applications. Due to this data not being easily
-				accessible in the past, the information was not being accessed and used.
-				As the company offers a wide variety of services and processes large
-				amounts of data, the tool needed to be simple to use and allow for fast
-				navigation and retrieval of information.
+				For this project, the brief was to build an event log viewer. There was
+				a need for the team members to easily scan and analyze the data
+				collected from the company's various customer facing applications. Due
+				to this data not being easily accessible in the past, the information
+				was often not being used. As the company offers a wide variety of
+				services and processes large amounts of data, the tool needed to be
+				simple to use and allow for fast navigation and retrieval of
+				information.
 			</p>
 			<p>
 				You can interact with the application
@@ -95,9 +96,10 @@
 							interact with the data. Having recently started learning React I
 							decided to use it to build out the project.<br />The
 							component-based architecture and the interchangeability it offers
-							really appeal to my logical thinking. Furthermore, the repetitive
-							presentation of a stack of infinitely nested data seemed the
-							perfect use case to make use of reusable components.
+							really appeal to me. Furthermore, the repetitive presentation of a
+							stack of infinitely nested data seemed the perfect use case to
+							make use of reusable components. For state management, I used
+							Redux Toolkit.
 						</p>
 						<p>
 							To plan the project, I used Figma as I found it intuitive to use.
@@ -126,8 +128,8 @@
 								In order to make interpretation of the data as efficient as
 								possible, I used color to communicate important information.
 								This allows the user to both find this information quickly and
-								to consume it instantly without the need to read and process the
-								text.
+								to consume it instantly without the need to read and process
+								text unnecessarily.
 							</p>
 						</div>
 					</div>
@@ -140,26 +142,24 @@
 			</div>
 			<div class="section__learned">
 				<div class="section__improvements">
-					<h4>Forthcoming Improvements</h4>
+					<h4>Build Process</h4>
 					<div class="section__improvements--content">
 						<p>
-							Currently, the project is being converted to TypeScript as I'm in
-							the process of learning the language.<br />I've recently completed
-							a custom useFetch hook to make the process of fetching the data
-							more efficient. To further help with the data processing
-							functionality, I've made use of the Context API to implement
-							separate contexts for the main and sub events.<br />
-							While the application will almost exclusively be used in a work
-							and office environment on desktop PCs, I've been working on
-							responsiveness, as I intend to make it fully responsive across the
-							full spectrum of devices. Presenting data on smaller devices is
-							particularly challenging and this will give me invaluable
-							experience in creating usable, responsive applications.<br />Currently
-							the Hierarchy View displays the selected sub-event. This will be
-							expanded to show the nested layers as the user clicks through the
-							data. The filtering component will be completed to allow specific
-							filtering by Host, as well as the ability to filter by 'Date' and
-							'Application'.
+							The build was initially done in JavaScript, but over the course of
+							the project I started learning TypeScript. As a result, I migrated
+							the project in order to reduce errors.<br />While I initially
+							experimented with the Context API, it quickly became apparent that
+							the scope of the state management required was simply beyond the
+							intended use of Context. Instead I chose to make use of Redux
+							Toolkit and used this to define several state slices for the
+							different areas of the application.<br />A custom useFetch hook
+							was implemented to make the process of fetching the data more
+							efficient.<br />While the application will almost exclusively be
+							used in a work and office environment on desktop PCs, I would like
+							to make it fully responsive across the full spectrum of devices.
+							Presenting data on smaller devices is particularly challenging and
+							this will give me invaluable experience in creating usable,
+							responsive applications.
 						</p>
 					</div>
 				</div>
@@ -188,12 +188,12 @@
 						intuitive.
 					</p>
 					<p>One step at a time.</p>
-					<div class="disclaimer">
+					<!-- <div class="disclaimer">
 						<p>
 							Note: Due to the project data containing confidential customer
 							information, a live version cannot currently be provided.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
@@ -276,7 +276,7 @@
 			</div>
 		</section>
 		<footer class="footer">
-			<span>&copy; 2021 by Deon Jordaan.</span>
+			<span>&copy; 2022 by Deon Jordaan &#8212</span>
 			<span>&nbspStart where you are. Use what you have. Do what you can.</span>
 		</footer>
 		<script src="./script.js"></script>
