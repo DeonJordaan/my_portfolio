@@ -49,8 +49,6 @@ body {
 @keyframes typingfade {
   0% {
     color: white; }
-  99% {
-    color: white; }
   100% {
     color: black; } }
 
@@ -100,7 +98,7 @@ body {
   border-radius: 15px;
   padding: 5rem;
   opacity: 1;
-  animation: typingfade 6s ease-in forwards, backgroundfade 1s ease-in 5s forwards; }
+  animation: typingfade 3s ease-in forwards, backgroundfade 1s ease-in 1s forwards; }
   @media (max-width: 56.25em) {
     .welcome__text {
       border-radius: 0; } }
@@ -182,7 +180,7 @@ p {
   padding: 3rem 2rem; }
 
 .appear {
-  animation: appear 3s ease-out 3s;
+  animation: appear 3s ease-out 1s;
   animation-fill-mode: forwards; }
 
 .welcome {
