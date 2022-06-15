@@ -284,6 +284,12 @@ p {
   .skills__icon--git {
     fill: #f05032; }
 
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem; }
+
 .projects {
   position: relative;
   display: flex;
