@@ -181,29 +181,13 @@ p {
   animation: appear 3s ease-out 1s;
   animation-fill-mode: forwards; }
 
-.welcome {
+.intro {
   width: 95vw;
   justify-content: center;
   margin: auto;
-  border-radius: 1rem; }
-  .welcome__scroll--label {
-    position: absolute;
-    bottom: 0.75rem;
-    right: 1rem;
-    font-size: 1.75rem;
-    opacity: 0;
-    transition: all ease-out 1s; }
-    @media (max-width: 37.5em) {
-      .welcome__scroll--label {
-        display: none; } }
-  @media (max-width: 56.25em) {
-    .welcome {
-      height: 60vh;
-      border-radius: 0; } }
-  @media (max-width: 37.5em) {
-    .welcome {
-      height: 40vh;
-      border-radius: 0; } }
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row; }
 
 .fade {
   color: transparent; }

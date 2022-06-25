@@ -1,38 +1,21 @@
 // WELCOME SECTION
-.welcome {
-	// position: relative;
+.intro {
 	width: 95vw;
-	// height: auto;
-	// height: 85vh;
 	justify-content: center;
 	margin: auto;
-	// background-image: url(../img/plants-SML.jpg);
-	// background-position: right 0 top 0;
-	// background-size: cover;
 	border-radius: 1rem;
+	display: flex;
+	flex-direction: row;
 
-	&__scroll--label {
-		position: absolute;
-		bottom: 0.75rem;
-		right: 1rem;
-		font-size: $text-font;
-		opacity: 0;
-		transition: all ease-out 1s;
+	// @include respond(tab-port) {
+	// 	height: 60vh;
+	// 	border-radius: 0;
+	// }
 
-		@include respond(phone) {
-			display: none;
-		}
-	}
-
-	@include respond(tab-port) {
-		height: 60vh;
-		border-radius: 0;
-	}
-
-	@include respond(phone) {
-		height: 40vh;
-		border-radius: 0;
-	}
+	// @include respond(phone) {
+	// 	height: 40vh;
+	// 	border-radius: 0;
+	// }
 }
 
 .fade {
