@@ -7,6 +7,16 @@
 	display: flex;
 	flex-direction: row;
 
+	&__greeting {
+		// flex-grow: 1;
+		width: 50%;
+	}
+
+	&__paragraphs {
+		// flex-grow: 1;
+		width: 50%;
+	}
+
 	// @include respond(tab-port) {
 	// 	height: 60vh;
 	// 	border-radius: 0;

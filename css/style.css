@@ -84,7 +84,7 @@ body {
   text-decoration: none;
   color: #666565; }
 
-.welcome__text {
+.intro__text {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -98,24 +98,26 @@ body {
   opacity: 1;
   animation: typingfade 3s ease-in forwards, backgroundfade 1s ease-in 1s forwards; }
   @media (max-width: 56.25em) {
-    .welcome__text {
+    .intro__text {
       border-radius: 0; } }
   @media (max-width: 37.5em) {
-    .welcome__text {
+    .intro__text {
       border-radius: 0;
       padding: 2rem; } }
-  .welcome__text--holder {
-    width: 70%; }
-  .welcome__text--main, .welcome__text--intro {
-    width: 75%;
-    font-size: 5rem;
-    font-weight: 100; }
-    @media (max-width: 56.25em) {
-      .welcome__text--main, .welcome__text--intro {
-        font-size: 4.25rem; } }
-    @media (max-width: 37.5em) {
-      .welcome__text--main, .welcome__text--intro {
-        font-size: 2.5rem; } }
+
+.intro__text-main,
+.intro__text-title {
+  width: 100%;
+  font-size: 5rem;
+  font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .intro__text-main,
+    .intro__text-title {
+      font-size: 4.25rem; } }
+  @media (max-width: 37.5em) {
+    .intro__text-main,
+    .intro__text-title {
+      font-size: 2.5rem; } }
 
 .about__header {
   text-align: center; }
@@ -188,6 +190,10 @@ p {
   border-radius: 1rem;
   display: flex;
   flex-direction: row; }
+  .intro__greeting {
+    width: 50%; }
+  .intro__paragraphs {
+    width: 50%; }
 
 .fade {
   color: transparent; }
@@ -195,70 +201,72 @@ p {
 .cursor {
   border-right: 0.3rem solid #777; }
 
-.about {
+.intro__about {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #666565;
-  padding: 8rem 20rem 0 20rem; }
+  padding: 8rem 10rem 0 10rem; }
+  .intro__about-header {
+    text-align: right; }
   @media (max-width: 75em) {
-    .about {
+    .intro__about {
       padding: 2.5rem 15rem; } }
   @media (max-width: 56.25em) {
-    .about {
+    .intro__about {
       padding: 2.5rem 8rem; } }
   @media (max-width: 37.5em) {
-    .about {
+    .intro__about {
       padding: 3rem; } }
   @media (min-width: 112.5em) {
-    .about {
+    .intro__about {
       padding: 0 25rem; } }
 
-.skills {
+.intro__skills {
   box-sizing: border-box;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #666565;
-  padding: 2.5rem 20rem 5rem 20rem; }
+  padding: 2.5rem 10rem 5rem 10rem; }
   @media (max-width: 75em) {
-    .skills {
+    .intro__skills {
       padding: 2.5rem 15rem; } }
   @media (max-width: 56.25em) {
-    .skills {
+    .intro__skills {
       padding: 0 8rem; } }
   @media (max-width: 37.5em) {
-    .skills {
+    .intro__skills {
       padding: 0 3rem; } }
   @media (min-width: 112.5em) {
-    .skills {
+    .intro__skills {
       padding: 5rem 25rem; } }
-  .skills__header {
-    text-align: center; }
-  .skills__list {
+  .intro__skills-header {
+    text-align: right; }
+  .intro__skills-list {
     display: flex;
     justify-content: space-around;
     padding: 3rem;
     list-style: none; }
-  .skills__icon svg {
+  .intro__skills-icon svg {
     width: 3rem;
     height: 3rem; }
     @media (max-width: 37.5em) {
-      .skills__icon svg {
+      .intro__skills-icon svg {
         width: 2.5rem;
         height: 2.5rem; } }
-  .skills__icon--html {
+  .intro__skills-icon--html {
     fill: #e34f26; }
-  .skills__icon--css {
+  .intro__skills-icon--css {
     fill: #1572b6; }
-  .skills__icon--sass {
+  .intro__skills-icon--sass {
     fill: #cc6699; }
-  .skills__icon--js {
+  .intro__skills-icon--js {
     fill: #f7df1e; }
-  .skills__icon--react {
+  .intro__skills-icon--react {
     fill: #61dafb; }
-  .skills__icon--ts {
+  .intro__skills-icon--ts {
     fill: #3178c6; }
-  .skills__icon--git {
+  .intro__skills-icon--git {
     fill: #f05032; }
 
 li {
@@ -302,7 +310,7 @@ li {
   .projects__main--image:hover {
     transform: scale(1.01); }
   .projects__main--description {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   .projects__sub--header {
     text-align: center; }
   .projects__sub--image {
@@ -317,7 +325,7 @@ li {
   .projects__sub--image:hover {
     transform: scale(1.01); }
   .projects__sub--description {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   .projects__sub--story {
     margin: 5rem auto 10rem auto;
     display: flex;

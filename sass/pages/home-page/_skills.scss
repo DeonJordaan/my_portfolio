@@ -1,75 +1,75 @@
-// SKILLS SECTION
-.skills {
-	box-sizing: border-box;
-	font-size: $text-font;
-	color: $text-color;
-	padding: 2.5rem 20rem 5rem 20rem;
+// // SKILLS SECTION
+// .skills {
+// 	box-sizing: border-box;
+// 	font-size: $text-font;
+// 	color: $text-color;
+// 	padding: 2.5rem 20rem 5rem 20rem;
 
-	@include respond(tab-land) {
-		padding: 2.5rem 15rem;
-	}
+// 	@include respond(tab-land) {
+// 		padding: 2.5rem 15rem;
+// 	}
 
-	@include respond(tab-port) {
-		padding: 0 8rem;
-	}
+// 	@include respond(tab-port) {
+// 		padding: 0 8rem;
+// 	}
 
-	@include respond(phone) {
-		padding: 0 3rem;
-	}
+// 	@include respond(phone) {
+// 		padding: 0 3rem;
+// 	}
 
-	@include respond(big-desktop) {
-		padding: 5rem 25rem;
-	}
+// 	@include respond(big-desktop) {
+// 		padding: 5rem 25rem;
+// 	}
 
-	&__header {
-		text-align: center;
-	}
+// 	&__header {
+// 		text-align: center;
+// 	}
 
-	&__list {
-		display: flex;
-		justify-content: space-around;
-		padding: 3rem;
-		list-style: none;
-	}
+// 	&__list {
+// 		display: flex;
+// 		justify-content: space-around;
+// 		padding: 3rem;
+// 		list-style: none;
+// 	}
 
-	&__icon svg {
-		width: 3rem;
-		height: 3rem;
+// 	&__icon svg {
+// 		width: 3rem;
+// 		height: 3rem;
 
-		@include respond(phone) {
-			width: 2.5rem;
-			height: 2.5rem;
-		}
-	}
+// 		@include respond(phone) {
+// 			width: 2.5rem;
+// 			height: 2.5rem;
+// 		}
+// 	}
 
-	&__icon {
-		&--html {
-			fill: #e34f26;
-		}
-		&--css {
-			fill: #1572b6;
-		}
-		&--sass {
-			fill: #cc6699;
-		}
-		&--js {
-			fill: #f7df1e;
-		}
-		&--react {
-			fill: #61dafb;
-		}
-		&--ts {
-			fill: #3178c6;
-		}
-		&--git {
-			fill: #f05032;
-		}
-	}
-}
+// 	&__icon {
+// 		&--html {
+// 			fill: #e34f26;
+// 		}
+// 		&--css {
+// 			fill: #1572b6;
+// 		}
+// 		&--sass {
+// 			fill: #cc6699;
+// 		}
+// 		&--js {
+// 			fill: #f7df1e;
+// 		}
+// 		&--react {
+// 			fill: #61dafb;
+// 		}
+// 		&--ts {
+// 			fill: #3178c6;
+// 		}
+// 		&--git {
+// 			fill: #f05032;
+// 		}
+// 	}
+// }
 
-li {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 1.2rem;
-}
+// li {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	font-size: 1.2rem;
+// }

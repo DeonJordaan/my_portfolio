@@ -31,7 +31,7 @@
 	color: $text-color;
 }
 
-.welcome__text {
+.intro__text {
 	// position: absolute;
 	// left: 0%;
 	display: flex;
@@ -56,24 +56,24 @@
 		border-radius: 0;
 		padding: 2rem;
 	}
+}
 
-	&--holder {
-		width: 70%;
+// .intro__text-holder {
+// 	width: 70%;
+// }
+
+.intro__text-main,
+.intro__text-title {
+	width: 100%;
+	font-size: 5rem;
+	font-weight: 100;
+
+	@include respond(tab-port) {
+		font-size: 4.25rem;
 	}
 
-	&--main,
-	&--intro {
-		width: 75%;
-		font-size: 5rem;
-		font-weight: 100;
-
-		@include respond(tab-port) {
-			font-size: 4.25rem;
-		}
-
-		@include respond(phone) {
-			font-size: 2.5rem;
-		}
+	@include respond(phone) {
+		font-size: 2.5rem;
 	}
 }
 
