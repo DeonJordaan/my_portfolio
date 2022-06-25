@@ -1,13 +1,14 @@
 // WELCOME SECTION
 .welcome {
-	position: relative;
+	// position: relative;
 	width: 95vw;
-	height: 85vh;
+	// height: auto;
+	// height: 85vh;
 	justify-content: center;
 	margin: auto;
-	background-image: url(../img/plants-SML.jpg);
-	background-position: right 0 top 0;
-	background-size: cover;
+	// background-image: url(../img/plants-SML.jpg);
+	// background-position: right 0 top 0;
+	// background-size: cover;
 	border-radius: 1rem;
 
 	&__scroll--label {

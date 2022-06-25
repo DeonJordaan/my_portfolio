@@ -84,9 +84,9 @@
 					</h1>
 				</div> -->
 			</div>
-			<div class="welcome__scroll--label">
+			<!-- <div class="welcome__scroll--label">
 				<span> Scroll ↓ </span>
-			</div>
+			</div> -->
 		</section>
 		<section id="about" class="about">
 			<div class="about__text">
@@ -365,7 +365,78 @@
 		</section>
 		<section id="contact" class="contact">
 			<h2 class="contact__header">Work with me</h2>
-			
+			<div class="contact__form">
+				<form
+					name="Website Contact Form"
+					id="form"
+					class="form"
+					method="POST"
+					action="#"
+					data-netlify-recaptcha="true"
+					netlify
+				>
+					<input
+						type="hidden"
+						name="subject"
+						value="Website inquiry from www.deon.dev"
+					/>
+					<div class="form__group">
+						<input
+							type="text"
+							class="form__input"
+							placeholder="Full Name"
+							id="name"
+							name="name"
+							required
+						/>
+						<label for="name" class="form__label"
+							>Full name</label
+						>
+					</div>
+					<div class="form__group">
+						<input
+							type="email"
+							class="form__input"
+							placeholder="Email address"
+							id="email"
+							name="email"
+							required
+						/>
+						<label for="email" class="form__label"
+							>Email address</label
+						>
+					</div>
+					<div class="form__group">
+						<textarea
+							id="message"
+							name="message"
+							class="form__input"
+							placeholder="Your message"
+							rows="6"
+							maxlength="300"
+							required
+						></textarea>
+						<label for="Message" class="form__label"
+							>Your message</label
+						>
+					</div>
+					<div
+						class="form__group recaptcha"
+						class="recaptcha"
+						data-netlify-recaptcha="true"
+					></div>
+					<div class="form__group">
+						<button
+							id="submitbutton"
+							type="submit"
+							value="Submit"
+							class="btn"
+						>
+							<span>SUBMIT</span>
+						</button>
+					</div>
+				</form>
+			</div>
 			<div class="contact__icon">
 				<ul class="contact__list">
 					<li class="contact__icon--email">

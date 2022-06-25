@@ -85,8 +85,6 @@ body {
   color: #666565; }
 
 .welcome__text {
-  position: absolute;
-  left: 0%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -96,7 +94,7 @@ body {
   color: black;
   background-color: black;
   border-radius: 15px;
-  padding: 5rem;
+  padding: 5rem 5rem 15rem 5rem;
   opacity: 1;
   animation: typingfade 3s ease-in forwards, backgroundfade 1s ease-in 1s forwards; }
   @media (max-width: 56.25em) {
@@ -184,14 +182,9 @@ p {
   animation-fill-mode: forwards; }
 
 .welcome {
-  position: relative;
   width: 95vw;
-  height: 85vh;
   justify-content: center;
   margin: auto;
-  background-image: url(../img/plants-SML.jpg);
-  background-position: right 0 top 0;
-  background-size: cover;
   border-radius: 1rem; }
   .welcome__scroll--label {
     position: absolute;
