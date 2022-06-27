@@ -94,7 +94,7 @@ body {
   color: black;
   background-color: black;
   border-radius: 15px;
-  padding: 5rem 5rem 15rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   opacity: 1;
   animation: typingfade 3s ease-in forwards, backgroundfade 1s ease-in 1s forwards; }
   @media (max-width: 56.25em) {
@@ -191,7 +191,8 @@ p {
   display: flex;
   flex-direction: row; }
   .intro__greeting {
-    width: 50%; }
+    width: 50%;
+    height: 50%; }
   .intro__paragraphs {
     width: 50%; }
 
@@ -207,7 +208,8 @@ p {
   box-sizing: border-box;
   font-size: 1.5rem;
   color: #666565;
-  padding: 8rem 10rem 0 10rem; }
+  padding: 0rem 10rem 0 10rem;
+  text-align: justify; }
   .intro__about-header {
     text-align: right; }
   @media (max-width: 75em) {
@@ -227,7 +229,8 @@ p {
   box-sizing: border-box;
   font-size: 1.5rem;
   color: #666565;
-  padding: 2.5rem 10rem 5rem 10rem; }
+  padding: 2.5rem 10rem 5rem 10rem;
+  text-align: justify; }
   @media (max-width: 75em) {
     .intro__skills {
       padding: 2.5rem 15rem; } }
@@ -254,20 +257,27 @@ p {
       .intro__skills-icon svg {
         width: 2.5rem;
         height: 2.5rem; } }
-  .intro__skills-icon--html {
-    fill: #e34f26; }
-  .intro__skills-icon--css {
-    fill: #1572b6; }
-  .intro__skills-icon--sass {
-    fill: #cc6699; }
-  .intro__skills-icon--js {
-    fill: #f7df1e; }
-  .intro__skills-icon--react {
-    fill: #61dafb; }
-  .intro__skills-icon--ts {
-    fill: #3178c6; }
-  .intro__skills-icon--git {
-    fill: #f05032; }
+
+.skills__icon-html {
+  fill: #e34f26; }
+
+.skills__icon-css {
+  fill: #1572b6; }
+
+.skills__icon-sass {
+  fill: #cc6699; }
+
+.skills__icon-js {
+  fill: #f7df1e; }
+
+.skills__icon-react {
+  fill: #61dafb; }
+
+.skills__icon-ts {
+  fill: #3178c6; }
+
+.skills__icon-git {
+  fill: #f05032; }
 
 li {
   display: flex;
@@ -295,9 +305,11 @@ li {
     .projects {
       padding: 0 25rem; } }
   .projects__header--text {
-    text-align: center; }
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: left; }
   .projects__main--header {
-    text-align: center; }
+    text-align: left; }
   .projects__main--image {
     display: block;
     width: 100%;

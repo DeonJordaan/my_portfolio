@@ -54,11 +54,11 @@ document.addEventListener(
 // Activating function for the navigation fade animation
 function navAnimation() {
 	const logo = document.querySelector('.nav__logo');
-	const scrollLabel = document.querySelector('.welcome__scroll--label');
+	// const scrollLabel = document.querySelector('.welcome__scroll--label');
 	const navItems = document.querySelectorAll('.nav__item');
 	// const welcomeSection = document.querySelector('welcome-section');
 	logo.classList.add('appear');
-	scrollLabel.classList.add('appear');
+	// scrollLabel.classList.add('appear');
 	navItems.forEach(item => item.classList.add('appear'));
 	// welcomeSection.classList.add('appear	');
 }

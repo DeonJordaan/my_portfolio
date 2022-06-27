@@ -6,7 +6,8 @@
 		box-sizing: border-box;
 		font-size: $text-font;
 		color: $text-color;
-		padding: 8rem 10rem 0 10rem;
+		padding: 0rem 10rem 0 10rem;
+		text-align: justify;
 
 		&-header {
 			text-align: right;
@@ -35,6 +36,7 @@
 		font-size: $text-font;
 		color: $text-color;
 		padding: 2.5rem 10rem 5rem 10rem;
+		text-align: justify;
 
 		@include respond(tab-land) {
 			padding: 2.5rem 15rem;
@@ -72,30 +74,30 @@
 				height: 2.5rem;
 			}
 		}
+	}
+}
 
-		&-icon {
-			&--html {
-				fill: #e34f26;
-			}
-			&--css {
-				fill: #1572b6;
-			}
-			&--sass {
-				fill: #cc6699;
-			}
-			&--js {
-				fill: #f7df1e;
-			}
-			&--react {
-				fill: #61dafb;
-			}
-			&--ts {
-				fill: #3178c6;
-			}
-			&--git {
-				fill: #f05032;
-			}
-		}
+.skills__icon {
+	&-html {
+		fill: #e34f26;
+	}
+	&-css {
+		fill: #1572b6;
+	}
+	&-sass {
+		fill: #cc6699;
+	}
+	&-js {
+		fill: #f7df1e;
+	}
+	&-react {
+		fill: #61dafb;
+	}
+	&-ts {
+		fill: #3178c6;
+	}
+	&-git {
+		fill: #f05032;
 	}
 }
 

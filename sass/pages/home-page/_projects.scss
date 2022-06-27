@@ -24,12 +24,14 @@
 	}
 
 	&__header--text {
-		text-align: center;
+		font-size: 5rem;
+		font-weight: 200;
+		text-align: left;
 	}
 
 	&__main {
 		&--header {
-			text-align: center;
+			text-align: left;
 		}
 		&--image {
 			display: block;
