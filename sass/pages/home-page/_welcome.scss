@@ -10,7 +10,7 @@
 	&__greeting {
 		// flex-grow: 1;
 		width: 50%;
-		height: 50%;
+		height: 100%;
 	}
 
 	&__paragraphs {
@@ -29,6 +29,7 @@
 	// }
 }
 
+// Class added to scroll-label to fade upon scroll
 .fade {
 	color: transparent;
 }

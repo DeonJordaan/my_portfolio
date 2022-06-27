@@ -40,6 +40,12 @@ body {
 .container {
   background-color: white; }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0; }
+
 @keyframes appear {
   0% {
     opacity: 0; }
@@ -192,7 +198,7 @@ p {
   flex-direction: row; }
   .intro__greeting {
     width: 50%;
-    height: 50%; }
+    height: 100%; }
   .intro__paragraphs {
     width: 50%; }
 
@@ -304,10 +310,22 @@ li {
   @media (min-width: 112.5em) {
     .projects {
       padding: 0 25rem; } }
-  .projects__header--text {
-    font-size: 5rem;
+  .projects__header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -20rem;
+    left: 10rem; }
+  .projects__header-text {
+    font-size: 10rem;
     font-weight: 200;
     text-align: left; }
+  .projects__header-arrow {
+    width: 10rem;
+    height: 10rem;
+    fill: #000;
+    text-align: center;
+    margin-left: 2rem; }
   .projects__main--header {
     text-align: left; }
   .projects__main--image {

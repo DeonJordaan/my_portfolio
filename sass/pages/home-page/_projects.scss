@@ -23,10 +23,27 @@
 		padding: 0 25rem;
 	}
 
-	&__header--text {
-		font-size: 5rem;
+	&__header {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: -20rem;
+		left: 10rem;
+		// flex-direction: ;
+	}
+
+	&__header-text {
+		font-size: 10rem;
 		font-weight: 200;
 		text-align: left;
+	}
+
+	&__header-arrow {
+		width: 10rem;
+		height: 10rem;
+		fill: #000;
+		text-align: center;
+		margin-left: 2rem;
 	}
 
 	&__main {
