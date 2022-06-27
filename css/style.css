@@ -35,7 +35,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  line-height: 1.35; }
 
 .container {
   background-color: white; }
