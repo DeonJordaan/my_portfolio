@@ -28,7 +28,7 @@
 	&__list {
 		display: flex;
 		justify-content: space-around;
-		padding: 3rem;
+		padding: 3rem 0;
 		list-style: none;
 	}
 
@@ -72,4 +72,5 @@ li {
 	flex-direction: column;
 	align-items: center;
 	font-size: 1.2rem;
+	width: 16.66%;
 }

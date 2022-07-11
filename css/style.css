@@ -145,7 +145,8 @@ h4 {
 
 p {
   margin-top: 0.5rem;
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.75rem;
+  text-align: justify; }
 
 .footer {
   display: flex;
@@ -198,7 +199,7 @@ p {
     position: absolute;
     bottom: 0.75rem;
     right: 1rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     opacity: 0;
     transition: all ease-out 1s; }
     @media (max-width: 37.5em) {
@@ -223,7 +224,7 @@ p {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #666565;
   padding: 8rem 20rem 0 20rem; }
   @media (max-width: 75em) {
@@ -241,7 +242,7 @@ p {
 
 .skills {
   box-sizing: border-box;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #666565;
   padding: 2.5rem 20rem 5rem 20rem; }
   @media (max-width: 75em) {
@@ -261,7 +262,7 @@ p {
   .skills__list {
     display: flex;
     justify-content: space-around;
-    padding: 3rem;
+    padding: 3rem 0;
     list-style: none; }
   .skills__icon svg {
     width: 3rem;
@@ -289,7 +290,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  width: 16.66%; }
 
 .projects {
   position: relative;
@@ -326,7 +328,7 @@ li {
   .projects__main--image:hover {
     transform: scale(1.01); }
   .projects__main--description {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   .projects__sub--header {
     text-align: center; }
   .projects__sub--image {
@@ -337,13 +339,14 @@ li {
     transition: all ease-in 0.2s; }
     @media (max-width: 37.5em) {
       .projects__sub--image {
-        margin: 5rem auto 5rem auto; } }
+        margin: 3rem auto;
+        width: 75%; } }
   .projects__sub--image:hover {
     transform: scale(1.01); }
   .projects__sub--description {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   .projects__sub--story {
-    margin: 5rem auto 10rem auto;
+    margin: 5rem auto 5rem auto;
     display: flex;
     flex-direction: column; }
   .projects__sub--text {
