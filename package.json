@@ -2,9 +2,8 @@
 	"name": "my-portfolio",
 	"version": "1.0.0",
 	"description": "My Dev Portfolio Website",
-	"main": "index.html",
+	"main": "public/index.js",
 	"author": "Deon",
-	"license": "ISC",
 	"scripts": {
 		"dev": "parcel src/index.html",
 		"copy-assets": "cp -r src/assets/* dist",
