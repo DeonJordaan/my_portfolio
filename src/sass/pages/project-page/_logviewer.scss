@@ -47,7 +47,7 @@
 			}
 		}
 
-		&--flowchart {
+		&--color-focus {
 			width: 50%;
 			margin-left: 3rem;
 			box-shadow: $image-shadow;
@@ -55,6 +55,18 @@
 			@include respond(tab-port) {
 				width: 80%;
 				margin: auto;
+			}
+		}
+
+		&--mobile-view {
+			width: 30%;
+			height: 50vh;
+			margin: 1rem 5rem;
+			// margin-right: 3rem;
+			box-shadow: $image-shadow;
+
+			@include respond(tab-port) {
+				width: 70%;
 			}
 		}
 	}
@@ -75,22 +87,39 @@
 			margin: 2rem 0;
 		}
 
-		&--content {
+		&-content {
 			display: flex;
 			flex-direction: column;
 		}
 	}
 
-	&__middle {
+	&__process {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		margin: 5rem 0;
 
 		@include respond(tab-port) {
 			flex-direction: column;
 		}
 
-		&--text {
+		&-content {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__build {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 5rem 0;
+
+		@include respond(tab-port) {
+			flex-direction: column-reverse;
+		}
+
+		&-content {
 			display: flex;
 			flex-direction: column;
 		}

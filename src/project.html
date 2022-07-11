@@ -17,7 +17,7 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="./sass/main.scss" />
 		<link
 			rel="shortcut icon"
 			type="image/png"
@@ -86,15 +86,15 @@
 					alt="Screenshot of log viewer application planning process in Figma"
 					class="logviewer__image--figma"
 				/>
-				<div class="section__tools--content">
+				<div class="section__tools-content">
 					<h4>Tools & Tech</h4>
-					<div class="section__tools--content-text">
+					<div class="section__tools-text">
 						<p>
 							I was given free reign to implement the project using any tools or
 							technologies I wanted. With the help of the lead developer, the
 							SQL database was setup on my system to enable my application to
 							interact with the data. Having recently started learning React I
-							decided to use it to build out the project.<br />The
+							decided to use it to build out the project.<br>The
 							component-based architecture and the interchangeability it offers
 							really appeal to me. Furthermore, the repetitive presentation of a
 							stack of infinitely nested data seemed the perfect use case to
@@ -109,11 +109,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="section__middle">
-				<div class="section__middle--text">
-					<div class="section__process">
+			<div class="section__process">
+				<div class="section__process-content">
+					<!-- <div class="section__process-desc"> -->
 						<h4>Thought Process</h4>
-						<div class="section__process--content">
+						<div class="section__process-text">
 							<p>
 								My highest priority was to present the data as clearly as
 								possible. This was challenging given the amount of data that
@@ -132,18 +132,23 @@
 								text unnecessarily.
 							</p>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<img
 					src="./img/Screenshot Color Focus.png"
 					alt="Close-up screenshot of event detail color highlights"
-					class="logviewer__image--flowchart"
+					class="logviewer__image--color-focus"
 				/>
 			</div>
-			<div class="section__learned">
-				<div class="section__improvements">
+			<div class="section__build">
+				<img
+					src="./img/Screenshot Mobile Crop.png"
+					alt="Screenshot of application in mobile view"
+					class="logviewer__image--mobile-view"
+				/>
+				<div class="section__build-content">
 					<h4>Build Process</h4>
-					<div class="section__improvements--content">
+					<div class="section__build-text">
 						<p>
 							The build was initially done in JavaScript, but over the course of
 							the project I started learning TypeScript. As a result, I migrated
@@ -155,14 +160,15 @@
 							different areas of the application.<br />A custom useFetch hook
 							was implemented to make the process of fetching the data more
 							efficient.<br />While the application will almost exclusively be
-							used in a work and office environment on desktop PCs, I would like
-							to make it fully responsive across the full spectrum of devices.
+							used in a work and office environment on desktop PCs, I decided to make it fully responsive across the full spectrum of devices.
 							Presenting data on smaller devices is particularly challenging and
-							this will give me invaluable experience in creating usable,
-							responsive applications.
+							this gave me invaluable experience in creating a usable,
+							responsive application.
 						</p>
 					</div>
 				</div>
+			</div>
+			<div class="section__learned">
 				<h4>What I Learned</h4>
 				<div class="section__learned--content">
 					<p>
