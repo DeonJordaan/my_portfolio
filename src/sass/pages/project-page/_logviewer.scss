@@ -33,7 +33,7 @@
 	&__image {
 		&--screenshot {
 			width: 100%;
-			margin: 2.5rem auto;
+			margin: 2.5rem auto 5rem auto;
 			box-shadow: $image-shadow;
 		}
 		&--figma {
@@ -59,8 +59,8 @@
 		}
 
 		&--mobile-view {
-			width: 30%;
-			height: 50vh;
+			// width: 50%;
+			height: 45vh;
 			margin: 1rem 5rem;
 			// margin-right: 3rem;
 			box-shadow: $image-shadow;
@@ -124,6 +124,10 @@
 			flex-direction: column;
 		}
 	}
+}
+
+.closing-p {
+	margin-top: 3rem;
 }
 
 .disclaimer {

@@ -177,8 +177,8 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 2rem;
-  font-weight: normal;
+  font-size: 2.35rem;
+  font-weight: 300;
 }
 
 @media (max-width: 37.5em) {
@@ -189,8 +189,8 @@ h3 {
 
 h4 {
   margin-bottom: .25rem;
-  font-size: 2.2rem;
-  font-weight: normal;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 p {
@@ -675,7 +675,7 @@ li {
 
 .logviewer__image--screenshot {
   width: 100%;
-  margin: 2.5rem auto;
+  margin: 2.5rem auto 5rem;
   box-shadow: 0 12px 12px #0003;
 }
 
@@ -706,8 +706,7 @@ li {
 }
 
 .logviewer__image--mobile-view {
-  width: 30%;
-  height: 50vh;
+  height: 45vh;
   margin: 1rem 5rem;
   box-shadow: 0 12px 12px #0003;
 }
@@ -776,6 +775,10 @@ li {
 .section__build-content {
   flex-direction: column;
   display: flex;
+}
+
+.closing-p {
+  margin-top: 3rem;
 }
 
 .disclaimer {

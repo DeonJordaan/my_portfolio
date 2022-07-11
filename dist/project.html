@@ -1,1 +1,214 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300&display=swap" rel="stylesheet"><link rel="stylesheet" href="/index.13195caa.css"><link rel="icon shortcut" type="image/png" href="/iconmonstr-cat-3.be66c518.svg"><title id="title">Deon Jordaan - Web Developer</title></head><body id="main" class="container"> <header class="header"> <div class="nav-holder"> <nav id="navbar" class="header__nav"> <ul class="nav"> <li class="appear nav__logo"> <a href="https://deon.dev" class="nav__link"><span>deon.dev</span></a> </li>  </ul> </nav> </div> </header> <section class="logviewer"> <h2 class="logviewer__header">Log Viewer Project Summary</h2>  <p> For this project, the brief was to build an event log viewer. There was a need for the team members to easily scan and analyze the data collected from the company's various customer facing applications. Due to this data not being easily accessible in the past, the information was often not being used. As the company offers a wide variety of services and processes large amounts of data, the tool needed to be simple to use and allow for fast navigation and retrieval of information. </p> <p> You can interact with the application <a target="”_blank”" href="https://log-viewer-project.netlify.app/"><b>here</b></a> or view the code on <a target="”_blank”" href="https://github.com/DeonJordaan/logviewer"><b>Github.</b></a> </p> <img src="/log-viewer-project_full_dark.cbca345c.png" alt="Screenshot of log viewer application project" class="logviewer__image--screenshot"> <div class="section__tools"> <img src="/Log%20Viewer%20Figma%20Layout%20SML.2e5f689a.jpg" alt="Screenshot of log viewer application planning process in Figma" class="logviewer__image--figma"> <div class="section__tools-content"> <h4>Tools & Tech</h4> <div class="section__tools-text"> <p> I was given free reign to implement the project using any tools or technologies I wanted. With the help of the lead developer, the SQL database was setup on my system to enable my application to interact with the data. Having recently started learning React I decided to use it to build out the project.<br>The component-based architecture and the interchangeability it offers really appeal to me. Furthermore, the repetitive presentation of a stack of infinitely nested data seemed the perfect use case to make use of reusable components. For state management, I used Redux Toolkit. </p> <p> To plan the project, I used Figma as I found it intuitive to use. This was especially helpful when it came to analyzing the layout to ensure the interface was as usable as possible. </p> </div> </div> </div> <div class="section__process"> <div class="section__process-content">  <h4>Thought Process</h4> <div class="section__process-text"> <p> My highest priority was to present the data as clearly as possible. This was challenging given the amount of data that needed to be presented and the limited screen real estate at my disposal. It was while researching best practices, that I learned the nuanced difference between legibility and readability. This guided my choice of font as well as teaching me to pay attention to the effect a small change in spacing and contrast can have. </p> <p> In order to make interpretation of the data as efficient as possible, I used colour to communicate important information. This allows the user to both find this information quickly and to consume it instantly without the need to read and process text unnecessarily. </p> </div>  </div> <img src="/Screenshot%20Color%20Focus.a5779ab9.png" alt="Close-up screenshot of event detail color highlights" class="logviewer__image--color-focus"> </div> <div class="section__build"> <img src="/Screenshot%20Mobile%20Crop.525a78ec.png" alt="Screenshot of application in mobile view" class="logviewer__image--mobile-view"> <div class="section__build-content"> <h4>Build Process</h4> <div class="section__build-text"> <p> The build was initially done in JavaScript, but over the course of the project I started learning TypeScript. As a result, I migrated the project in order to reduce errors.<br>While I initially experimented with the Context API, it quickly became apparent that the scope of the state management required was simply beyond the intended use of Context. Instead I chose to make use of Redux Toolkit and used this to define several state slices for the different areas of the application.<br>A custom useFetch hook was implemented to make the process of fetching the data more efficient.<br>While the application will almost exclusively be used in a work and office environment on desktop PCs, I decided to make it fully responsive across the full spectrum of devices. Presenting data on smaller devices is particularly challenging and this gave me invaluable experience in creating a usable, responsive application. </p> </div> </div> </div> <div class="section__learned"> <h4>What I Learned</h4> <div class="section__learned--content"> <p> The biggest challenge was working out the cause and effect of the rendering (and re-rendering) of components. Coupled with the effects of hooks and how they are intertwined with this process, this proved really tricky to wrap my head around. </p> <p> There's a tangled web analogy in there for sure and mostly it felt like it was wrapped around my head! Needless to say, it's going to take some time to really grasp these concepts. </p> <p> Another realization was just how important it is to really get stuck in and apply what I'd learned. I found it difficult to properly plan the layout of components and the flow of data between them, simply because I hadn't the ability to form clear mental models of how they would normally interact. Thus I found it easier to actually start building a basic structure and once it started taking shape, I was able to see a clearer path forward and make adjustments to my original plans. With experience, this understanding will become intuitive. </p> <p>One step at a time.</p>  </div> </div> </section> <section id="contact" class="contact"> <h2 class="contact__header">Work with me</h2> <div class="contact__icon"> <ul class="contact__list"> <li class="contact__icon--email"> <a target="_blank" href="mailto:hello@deon.dev"> <svg role="img" viewBox="0 0 24 24"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg> </a> </li> <li class="contact__icon--github"> <a target="_blank" id="profile-link" href="https://github.com/DeonJordaan"><svg role="img" viewBox="0 0 24 24"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> </a> </li> <li class="contact__icon--linkedin"> <a target="_blank" href="https://www.linkedin.com/in/deonjordaan76/"><svg role="img" viewBox="0 0 24 24"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> </a> </li> <li class="contact__icon--twitter"> <a target="_blank" href="https://twitter.com/deonjordaan" class="contact-list__link"><svg role="img" viewBox="0 0 24 24"><title>Twitter</title><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg></a> </li> <li class="contact__icon--phone"> <a target="_blank" href="tel:+27-82-770-2394"><svg role="img" viewBox="0 0 24 24"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg> </a> </li> </ul> </div> </section> <footer class="footer"> <span>&copy; 2022 by Deon Jordaan &#8212</span> <span>&nbspStart where you are. Use what you have. Do what you can.</span> </footer> <script src="/project.7582b717.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="/index.f7626f62.css">
+		<link rel="shortcut icon" type="image/png" href="/iconmonstr-cat-3.7ba5e18c.svg">
+
+		<title id="title">Deon Jordaan - Web Developer</title>
+	</head>
+	<body id="main" class="container">
+		<header class="header">
+			<div class="nav-holder">
+				<nav id="navbar" class="header__nav">
+					<ul class="nav">
+						<li class="nav__logo appear">
+							<a href="https://deon.dev" class="nav__link"><span>deon.dev</span></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="logviewer">
+			<h2 class="logviewer__header">Log Viewer Project Summary</h2>
+			<p>
+				For this project, the brief was to build an event log viewer. There was
+				a need for the team members to easily scan and analyze the data
+				collected from the company's various customer facing applications. Due
+				to this data not being easily accessible in the past, the information
+				was often not being used. As the company offers a wide variety of
+				services and processes large amounts of data, the tool needed to be
+				simple to use and allow for fast navigation and retrieval of
+				information.
+			</p>
+			<p>
+				You can interact with the application
+
+				<a target="”_blank”" href="https://log-viewer-project.netlify.app/"><b>here</b></a>
+				or view the code on
+				<a target="”_blank”" href="https://github.com/DeonJordaan/logviewer"><b>Github.</b></a>
+			</p>
+			<img src="/log-viewer-project_full_dark.425b1f6b.png" alt="Screenshot of log viewer application project" class="logviewer__image--screenshot">
+			<div class="section__tools">
+				<img src="/Log%20Viewer%20Figma%20Layout%20SML.002016a4.jpg" alt="Screenshot of log viewer application planning process in Figma" class="logviewer__image--figma">
+				<div class="section__tools-content">
+					<h3>Tools & Tech</h3>
+					<div class="section__tools-text">
+						<p>
+							I was given free reign to implement the project using any tools or
+							technologies I wanted. With the help of the lead developer, the
+							SQL database was setup on my system to enable my application to
+							interact with the data. Having recently started learning React I
+							decided to use it to build out the project.
+						</p>
+						<p>
+							The component-based architecture and the interchangeability it
+							offers really appeal to me. Furthermore, the repetitive
+							presentation of a stack of infinitely nested data seemed the
+							perfect use case to make use of reusable components. For state
+							management, I used Redux Toolkit.
+						</p>
+						<p>
+							To plan the project, I used Figma as I found it intuitive to use.
+							This was especially helpful when it came to analyzing the layout
+							to ensure the interface was as usable as possible.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__process">
+				<div class="section__process-content">
+					<h3>Thought Process</h3>
+					<div class="section__process-text">
+						<p>
+							My highest priority was to present the data as clearly as
+							possible. This was challenging given the amount of data that
+							needed to be presented and the limited screen real estate at my
+							disposal. It was while researching best practices, that I learned
+							the nuanced difference between legibility and readability. This
+							guided my choice of font as well as teaching me to pay attention
+							to the effect a small change in spacing and contrast can have.
+						</p>
+						<p>
+							In order to make interpretation of the data as efficient as
+							possible, I used colour to communicate important information. This
+							allows the user to both find this information quickly and to
+							consume it instantly without the need to read and process text
+							unnecessarily.
+						</p>
+					</div>
+				</div>
+				<img src="/Screenshot%20Color%20Focus.63ff14a6.jpg" alt="Close-up screenshot of event detail color highlights" class="logviewer__image--color-focus">
+			</div>
+			<div class="section__build">
+				<img src="/Screenshot%20Mobile%20V3.0a32f13d.png" alt="Screenshot of application in mobile view" class="logviewer__image--mobile-view">
+				<div class="section__build-content">
+					<h3>Build Process</h3>
+					<div class="section__build-text">
+						<p>
+							The build was initially done in JavaScript, but over the course of
+							the project I started learning TypeScript. As a result, I migrated
+							the project in order to reduce errors.
+						</p>
+						<p>
+							While I initially experimented with the Context API, it quickly
+							became apparent that the scope of the state management required
+							was simply beyond the intended use of Context. Instead I chose to
+							make use of Redux Toolkit and used this to define several state
+							slices for the different areas of the application.
+						</p>
+						<p>
+							A custom useFetch hook was implemented to make the process of
+							fetching the data more efficient.
+						</p>
+						<p>
+							While the application will almost exclusively be used in a work
+							and office environment on desktop PCs, I decided to make it fully
+							responsive across the full spectrum of devices. Presenting data on
+							smaller devices is particularly challenging and this gave me
+							invaluable experience in creating a usable, responsive
+							application.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__learned">
+				<h3>What I Learned</h3>
+				<div class="section__learned--content">
+					<p>
+						The biggest challenge was working out the cause and effect of the
+						rendering (and re-rendering) of components. Coupled with the effects
+						of hooks and how they are intertwined with this process, this proved
+						really tricky to wrap my head around.
+					</p>
+					<p>
+						There's a tangled web analogy in there for sure and mostly it felt
+						like it was wrapped around my head! Needless to say, it's going to
+						take some time to really grasp these concepts.
+					</p>
+					<p>
+						Another realization was just how important it is to really get stuck
+						in and apply what I'd learned. I found it difficult to properly plan
+						the layout of components and the flow of data between them, simply
+						because I hadn't the ability to form clear mental models of how they
+						would normally interact. Thus I found it easier to actually start
+						building a basic structure and once it started taking shape, I was
+						able to see a clearer path forward and make adjustments to my
+						original plans. With experience, this understanding will become
+						intuitive.
+					</p>
+					<div class="closing-p">
+						<p>One step at a time.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact">
+			<h2 class="contact__header">Work with me</h2>
+			<div class="contact__icon">
+				<ul class="contact__list">
+					<li class="contact__icon--email">
+						<a target="_blank" href="mailto:hello@deon.dev" class="contact-list__link">
+							<svg role="img" viewbox="0 0 24 24">
+								<title>Gmail</title>
+								<path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path>
+							</svg>
+						</a>
+					</li>
+					<li class="contact__icon--github">
+						<a target="_blank" id="profile-link" href="https://github.com/DeonJordaan" class="contact-list__link"><svg role="img" viewbox="0 0 24 24">
+								<title>GitHub</title>
+								<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+							</svg>
+						</a>
+					</li>
+
+					<li class="contact__icon--linkedin">
+						<a target="_blank" href="https://www.linkedin.com/in/deonjordaan76/" class="contact-list__link"><svg role="img" viewbox="0 0 24 24">
+								<title>LinkedIn</title>
+								<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+							</svg>
+						</a>
+					</li>
+					<li class="contact__icon--twitter">
+						<a target="_blank" href="https://twitter.com/deonjordaan" class="contact-list__link"><svg role="img" viewbox="0 0 24 24">
+								<title>Twitter</title>
+								<path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg></a>
+					</li>
+
+					<li class="contact__icon--phone">
+						<a target="_blank" href="tel:+27-82-770-2394" class="contact-list__link"><svg role="img" viewbox="0 0 24 24">
+								<title>WhatsApp</title>
+								<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="footer">
+			<!-- <span>&copy; 2022 by Deon Jordaan &#8212</span> -->
+			<span>&nbspStart where you are. Use what you have. Do what you can.</span>
+		</footer>
+		<script src="/project.44983732.js"></script>
+	</body>
+</html>
