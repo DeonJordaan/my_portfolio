@@ -181,12 +181,6 @@ h3 {
   font-weight: 300;
 }
 
-@media (max-width: 37.5em) {
-  h3 {
-    font-size: 1.8rem;
-  }
-}
-
 h4 {
   margin-bottom: .25rem;
   font-size: 2rem;
@@ -688,7 +682,7 @@ li {
 @media (max-width: 56.25em) {
   .logviewer__image--figma {
     width: 80%;
-    margin: auto;
+    margin: 2rem auto;
   }
 }
 
@@ -701,20 +695,15 @@ li {
 @media (max-width: 56.25em) {
   .logviewer__image--color-focus {
     width: 80%;
-    margin: auto;
+    margin: 2rem auto;
   }
 }
 
 .logviewer__image--mobile-view {
   height: 45vh;
+  width: auto;
   margin: 1rem 5rem;
   box-shadow: 0 12px 12px #0003;
-}
-
-@media (max-width: 56.25em) {
-  .logviewer__image--mobile-view {
-    width: 70%;
-  }
 }
 
 .section__tools {
@@ -732,7 +721,7 @@ li {
 
 @media (max-width: 37.5em) {
   .section__tools {
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
 }
 
@@ -754,6 +743,12 @@ li {
   }
 }
 
+@media (max-width: 37.5em) {
+  .section__process {
+    margin: 3rem 0;
+  }
+}
+
 .section__process-content {
   flex-direction: column;
   display: flex;
@@ -772,9 +767,25 @@ li {
   }
 }
 
+@media (max-width: 37.5em) {
+  .section__build {
+    margin: 3rem 0;
+  }
+}
+
 .section__build-content {
   flex-direction: column;
   display: flex;
+}
+
+.section__learned {
+  margin: 5rem 0;
+}
+
+@media (max-width: 37.5em) {
+  .section__learned {
+    margin: 3rem 0;
+  }
 }
 
 .closing-p {

@@ -43,7 +43,7 @@
 
 			@include respond(tab-port) {
 				width: 80%;
-				margin: auto;
+				margin: 2rem auto;
 			}
 		}
 
@@ -54,20 +54,20 @@
 
 			@include respond(tab-port) {
 				width: 80%;
-				margin: auto;
+				margin: 2rem auto;
 			}
 		}
 
 		&--mobile-view {
-			// width: 50%;
 			height: 45vh;
+			width: auto;
 			margin: 1rem 5rem;
 			// margin-right: 3rem;
 			box-shadow: $image-shadow;
 
-			@include respond(tab-port) {
-				width: 70%;
-			}
+			// @include respond(tab-port) {
+			// 	width: 70%;
+			// }
 		}
 	}
 }
@@ -84,7 +84,7 @@
 		}
 
 		@include respond(phone) {
-			margin: 2rem 0;
+			margin: 3rem 0;
 		}
 
 		&-content {
@@ -103,6 +103,10 @@
 			flex-direction: column;
 		}
 
+		@include respond(phone) {
+			margin: 3rem 0;
+		}
+
 		&-content {
 			display: flex;
 			flex-direction: column;
@@ -119,9 +123,21 @@
 			flex-direction: column-reverse;
 		}
 
+		@include respond(phone) {
+			margin: 3rem 0;
+		}
+
 		&-content {
 			display: flex;
 			flex-direction: column;
+		}
+	}
+
+	&__learned {
+		margin: 5rem 0;
+
+		@include respond(phone) {
+			margin: 3rem 0;
 		}
 	}
 }
