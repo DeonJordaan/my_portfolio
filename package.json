@@ -2,7 +2,7 @@
 	"name": "my-portfolio",
 	"version": "1.0.0",
 	"description": "My Dev Portfolio Website",
-	"main": "index.js",
+	"main": "index.html",
 	"author": "Deon",
 	"license": "ISC",
 	"scripts": {
